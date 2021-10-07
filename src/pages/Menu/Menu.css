@@ -1,0 +1,14 @@
+.estiloCabecalho{
+    display:flex;
+    flex-direction: column;
+    height: 100%;
+    font-family: 'Fira Sans';
+    font-size: 170%;
+}
+
+.logo{
+    margin-left: 11.2%;
+    margin-top: 1%;
+    width: 12em;
+    height: 25%;
+}

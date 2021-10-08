@@ -5,29 +5,6 @@
     flex-direction:column;
     font-family: 'Fira Sans';
 }
-.cabecalho {
-    display: flex;
-    background-color: #CBF3F0;
-    justify-content: space-between;
-}
-.navbar {
-    margin-right: 9em;
-}
-.navbarLink {
-    font-size: 1.2em;
-    padding: 15px;
-    text-decoration: none;
-    color: black;
-}
-.navbarLink:hover{
-    background-color: black;
-    color: #CBF3F0;
-}
-.logo{
-    width:25%;
-    padding: 1%;
-    margin-left: 11%;
-}
 
 .carrossel {
     display: flex;
@@ -38,4 +15,47 @@
 .areaCarrossel {
     background-color: #FABE36;
     background-position: right; 
+}
+
+
+
+
+
+.bora {
+    padding: 5em;
+    background-color: #5FC2B0;
+    display: flex;
+    flex-direction: column;
+}
+
+.titulo {
+    display: flex;
+    flex-direction: column;
+    vertical-align: middle;
+    margin-left: 11%;
+    font-size: larger;
+}
+.textoLogo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 11%;
+}
+.botoes {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 11%;
+    margin-right: 11%;
+}
+
+
+
+.historia {
+    padding: 5em;
+    background-color: #5FC2B0;
+    display: flex;
+    flex-direction: column;
+}
+.textoHistoria {
+    
 }

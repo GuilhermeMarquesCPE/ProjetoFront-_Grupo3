@@ -1,25 +1,16 @@
 import React from "react";
-import {Link} from "react-router-dom";
 import { Carousel } from "react-bootstrap";
+import Navbar from "C:/Users/Guilherme/Desktop/CPE/RepoFront/ProjetoFront_Grupo3/src/Components/Navbar"
 import "./Home.css"
+import Footer from "../../Components/Footer";
 
 function Home(){
     return (
     <div className="home" >
-        <div className="cabecalho">
-            
-            <img src="/Images/logo.png" alt="logo" className="logo"></img>
-
-            <div className="navbar">
-                <Link to="home" className="navbarLink">Home</Link>
-                <Link to="servicos" className="navbarLink">Servicos</Link>
-                <Link to="perfil" className="navbarLink">Perfil</Link>
-                <Link to="Cadastro" className="navbarLink">Cadastro</Link>
-                <Link to="Login" className="navbarLink">Login</Link>
-            </div>
-
-        </div>
-
+        <Navbar/>
+        <br/>
+        <br/>
+        <br/>
         <div className="areaCarrossel">
             <Carousel className="carrossel">
                 <Carousel.Item className="carrosselItem">
@@ -59,7 +50,7 @@ function Home(){
                 </Carousel.Item>
     </Carousel>
         </div>
-        
+        <Footer/>
     </div>
     )
 }

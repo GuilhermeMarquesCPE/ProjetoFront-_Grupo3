@@ -7,7 +7,8 @@ import Cadastro from "./pages/Cadastro";
 import Servicos from "./pages/Servicos";
 import Perfil from "./pages/Perfil";
 import Menu from "./pages/Menu";
-import Navbar from "./pages/Navbar";
+import Navbar from "./Components/Navbar";
+import Footer from "./Components/Footer";
 
 function Routes(){
     return(
@@ -20,6 +21,7 @@ function Routes(){
                 <Route path="/perfil" component={Perfil} />
                 <Route path="/temp" component={Menu} />
                 <Route path="/navbar" component={Navbar} />
+                <Route path="/footer" component={Footer} />
             </Switch>
         </BrowserRouter>
     )    

@@ -2,10 +2,11 @@ import React from "react";
 import {Link} from "react-router-dom";
 import { Carousel, Button } from "react-bootstrap";
 import "./Home.css";
-import Navbar from "../Navbar";
 import Cadastro from "../Cadastro";
 import Login from "../Login/Login";
 import Servicos from "../Servicos/Servicos";
+import Navbar from "../../Components/Navbar";
+import Footer from "../../Components/Footer";
 
 function Home(){
     return (
@@ -106,6 +107,7 @@ function Home(){
         </div>
 
     </div>
+    <Footer/>
     </div>
     )
 }

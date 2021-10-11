@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./Login.css";
 import { Form, Button } from "react-bootstrap";
 import { useHistory, Link } from "react-router-dom"; 
-import Navbar from "C:/Users/Guilherme/Desktop/CPE/RepoFront/ProjetoFront_Grupo3/src/Components/Navbar";
+import Navbar from "../../Components/Navbar";
 import Footer from "../../Components/Footer";
 
 function Login() {

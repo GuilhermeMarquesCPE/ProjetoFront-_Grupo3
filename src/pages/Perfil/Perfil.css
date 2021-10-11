@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital@1&display=swap');
 
 .base {
-    height: 170%;
+    height: auto;
     display: flex;
     flex-direction:column;
     font-family: 'Fira Sans';

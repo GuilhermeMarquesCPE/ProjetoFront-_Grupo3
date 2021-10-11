@@ -44,8 +44,9 @@
     color: #5fc2b0;
 }
 
-.Escrito {
+.novo {
     display: flex;
     flex-direction: row;
     padding: 1em;
+    font-size: 1em;
 }

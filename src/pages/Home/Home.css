@@ -18,10 +18,6 @@
     background-position: right; 
 }
 
-
-
-
-
 .bora {
     padding: 5em;
     background-color: #5FC2B0;
@@ -49,14 +45,9 @@
     margin-right: 11%;
 }
 
-
-
 .historia {
     padding: 5em;
     background-color: #5FC2B0;
     display: flex;
     flex-direction: column;
-}
-.textoHistoria {
-    
 }

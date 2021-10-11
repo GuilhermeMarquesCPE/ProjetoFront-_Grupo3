@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
+
+.cadastro {
+    display: flex;
+    flex-direction: column;
+}
+
+.cadastre{
+    font-size: 2.5em;
+    font-family: 'Fira Sans';
+}
+
+.Container {
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    vertical-align: middle;
+}
+.inputs{
+    width: 30em;
+}
+.dropButton{
+    padding-bottom: 1em;
+}
+.btn-primary {
+    color: #5FC2B0;
+    background-color: #5FC2B0 !important;
+    border-color: #5FC2B0 !important;
+}
+.CadastrarButton{
+    padding-top: 1em;
+}
+.CadastrarButton button:hover{
+    background-color: #5fc2b0;
+    border-color: #5fc2b0;
+    color:#141414 ;
+    
+}
+.descricao{
+    width: 30em;
+    height: 10em;
+    border-style:inset;
+    border: 1px solid #ced4da
+}
+.cadastre2{
+    font-size: 1em;
+    font-family: 'Fira Sans';
+}

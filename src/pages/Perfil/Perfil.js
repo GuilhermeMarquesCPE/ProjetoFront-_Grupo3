@@ -1,6 +1,8 @@
 import React from "react";
 
 function Perfil(){
-    <menu></menu>
+    return (
+        <p>Perfil</p>
+    )
 }
 export default Perfil;

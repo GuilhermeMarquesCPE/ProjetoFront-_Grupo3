@@ -12,7 +12,7 @@ function Footer(){
     return(
         <div className="rodape">
             <div className="text1">
-                <p>Entrem em contato!</p>
+                <p className="text3">Entrem em contato!</p>
                 <FaFacebookSquare className="icon"/>
                 <BsInstagram className="icon"/>
                 <IoLogoWhatsapp className="icon"/>
@@ -21,7 +21,7 @@ function Footer(){
             <div className="Ficouduvida">
                 <p className="text3">Ficou alguma dúvida?</p>
                 <div className="email">
-                <p><AiOutlineMail className="iconEmail"/>  juliaempreendedora@gmail.com</p></div>  
+                <p className="text2"><AiOutlineMail className="iconEmail"/>  juliaempreendedora@gmail.com</p></div>  
             </div>
         </div>
     )

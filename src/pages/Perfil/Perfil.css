@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital@1&display=swap');
+
+.base {
+    height: 170%;
+    display: flex;
+    flex-direction:column;
+    font-family: 'Fira Sans';
+    justify-content: center;
+    vertical-align: middle;
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 0em;
+}
+
+.frase {
+    padding-bottom: 1em;
+    padding-top: 1em;
+    margin-right: 60%;
+}
+
+.icone {
+    padding-top: 0.2em;
+    font-size: 4em;
+    color: black;
+    font-family: 'Fira Sans';
+}
+
+.ChangeData {
+    padding-top: 0.5em;
+    font-family: 'Fira Sans';
+    text-decoration: none;
+    color: #5fc2b0;
+    padding-bottom: 0.5em;
+}
+
+.ChangeData:hover {
+    color: #FCC034;
+}
+
+.informacoes{
+    padding-top: 1em;
+    line-height: 0.5em;
+}
+
+.dados {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2em;
+    background-color: #5FC2B0;
+    width: 60em;
+    padding: 2em;
+    margin: 5em;
+    border-radius: 1em;
+    margin-top: 2em;
+}
+
+.line {
+    display: flex;
+
+}
+
+.icon {
+    width: 2em;
+    height: 2em;
+    padding-bottom: 0.7em;
+}
+
+

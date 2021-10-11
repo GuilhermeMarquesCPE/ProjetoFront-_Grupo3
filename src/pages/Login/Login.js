@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import "./Login.css";
 import { Form, Button } from "react-bootstrap";
 import { useHistory, Link } from "react-router-dom"; 
-import Navbar from "../../Components/Navbar";
 import Footer from "../../Components/Footer";
+import Navbar from "../../Components/Navbar";
 
 function Login() {
   const [email, setEmail] = useState();

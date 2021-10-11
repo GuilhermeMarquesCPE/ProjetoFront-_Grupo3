@@ -1,7 +1,7 @@
 import React from "react";
 import { Carousel } from "react-bootstrap";
-import Navbar from "C:/Users/Guilherme/Desktop/CPE/RepoFront/ProjetoFront_Grupo3/src/Components/Navbar"
-import "./Home.css"
+import Navbar from "../../Components/Navbar"
+import "./Home.css";
 import Footer from "../../Components/Footer";
 
 function Home(){

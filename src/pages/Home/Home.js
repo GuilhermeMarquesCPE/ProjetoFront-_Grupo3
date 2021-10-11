@@ -59,17 +59,19 @@ function Home(){
     <br/>
     <div className="bora">
         <div className="titulo">
-            <h1>#BoraFazerAcontecer</h1>
+            <p>#BoraFazerDiferente</p>
         </div>
         <div className="textoLogo">
-            <p>Encontre os serviços que 
+            <div className="texto">
+               <p>Encontre os serviços que 
                 <br/>
                 você precisa e ajude a
                 <br/> 
                 divulgar os trabalhadores 
                 <br/>
-                autônomos de todo o Brasil</p>
-                <img src="/Images/logoescura.jfif" alt="logo" className="logo"></img>
+                autônomos de todo o Brasil</p> 
+            </div>
+            <img src="/Images/logoescura.jfif" alt="logo" className="logo"></img>
         </div>
 
         <div className="botoes">
@@ -85,7 +87,8 @@ function Home(){
     <br/>
     <br/>
     <div className="historia">
-        <div className="textoHist">
+        <div className="margem">
+            <div className="textoHist">
             <p>A AutonomEASY é uma empresa do ramo de
                 <br/>
                 serviços fundada por Júlia em 2000. Conta com
@@ -103,10 +106,13 @@ function Home(){
                 potencial impacto positivo que o trabalho 
                 <br/>
                 independente pode causar.</p>
-                <img src="/Images/carrinho.jfif" alt="logo" className="logo"></img>
         </div>
+                <img src="/Images/carrinho.jfif" alt="logo" className="desenho"></img>
+
 
     </div>
+        </div>
+        
     <Footer/>
     </div>
     )

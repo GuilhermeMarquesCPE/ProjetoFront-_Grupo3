@@ -18,6 +18,8 @@
     background-position: right; 
 }
 
+
+
 .bora {
     padding: 5em;
     background-color: #5FC2B0;
@@ -31,23 +33,61 @@
     vertical-align: middle;
     margin-left: 11%;
     font-size: larger;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 500;
+    font-size: 600%;
 }
+
 .textoLogo {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-left: 11%;
+    margin-left: 18%;
+    margin-right: 11%
 }
+.texto{
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 400;
+    font-size: 250%;
+}
+.logo{
+    width:30%;
+    padding: 1%;
+}
+
 .botoes {
     display: flex;
     justify-content: space-between;
     margin-left: 11%;
     margin-right: 11%;
+    width: 40%;
+    height: 300%;
 }
 
+
+
+
 .historia {
-    padding: 5em;
     background-color: #5FC2B0;
-    display: flex;
-    flex-direction: column;
+    
+}
+.margem{
+   display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    padding: 2em; 
+    margin-left: 11%;
+    margin-right: 11%;
+    margin-top: 5%;
+}
+
+.textoHist {
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 400;
+    font-size: 100%;
+    margin-right: 15%
+}
+
+.desenho {
+    width:40%;
 }

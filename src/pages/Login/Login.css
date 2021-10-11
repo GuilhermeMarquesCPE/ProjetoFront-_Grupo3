@@ -1,0 +1,52 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    align-items: center;
+    flex-grow: 1;
+    padding: 10em;
+}
+
+.base {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    vertical-align: middle;
+}
+
+.inputs{
+    display: flex;
+    flex-direction: column;
+    margin-left: 16px;
+    margin-right: 16px;
+    vertical-align: middle;
+    width: 40%;
+}
+
+.LoginButton{
+    display: flex;
+    flex-direction: column;
+    margin-left: 16px;
+    margin-right: 16px;
+    vertical-align: middle;
+    width: 15%;
+}
+
+
+.LoginButton button:hover{
+    background-color: #5fc2b0;
+    border-color: #5fc2b0;
+    color:#141414 ;
+}
+
+.CadastroLink {
+    color: #5fc2b0;
+}
+
+.novo {
+    display: flex;
+    flex-direction: row;
+    padding: 1em;
+    font-size: 1em;
+}

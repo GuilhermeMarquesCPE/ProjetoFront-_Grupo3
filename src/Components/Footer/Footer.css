@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
+
+.rodape {
+    padding-top: 1em;
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    font-family: 'Fira-Sans';
+    background-color:#CBF3F0;
+}
+
+.text1{
+    font-size: 1em;
+    padding-left: 12em;
+}
+.text2{
+    font-size: 1em;
+}
+.text3{
+    font-size: 1.8em;
+}
+.icon{
+    width:3em;
+    height: 3em;
+    padding: 0.2em;
+}
+.iconEmail{
+    font-size: 1em;
+}
+.Ficouduvida{
+    padding-right: 12em;
+}
+.iconEmail{
+    width: 1.5em;
+    height: 1.5em;
+}
+.email{
+    display: flex;
+}

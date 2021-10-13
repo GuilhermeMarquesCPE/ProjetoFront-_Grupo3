@@ -25,7 +25,7 @@ function Cadastro(){
         <div className="cadastro">
             <Navbar/>
             <div className="container">
-                <p className="cadastre">Cadastre-se em Autonomeasy</p>
+                <p className="cadastre">Cadastre-se em AutonomEASY</p>
                 <div className="Formulario">
                     <Form className="inputs">
                         <Form.Group className="mb-3" controlId="Nome">

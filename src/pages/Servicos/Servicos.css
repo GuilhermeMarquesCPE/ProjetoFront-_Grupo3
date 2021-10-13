@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital@1&display=swap');
+
+.conteudo{
+    display: flex;
+    background-image: url("./fundoServicos.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #f8f8f8;
+    padding-top:3em;
+}
+.underSearch{
+    display:flex;
+    justify-content: space-between;
+}
+.text{
+
+    font-family: 'Fira Sans';
+    font-size: 4em;
+
+}
+
+.texto{
+    padding-left: 12em;
+    padding-top: 5em;
+    padding-bottom: 5em;
+}
+
+.emprego{
+    padding:2em;
+    height: 3em;
+    width: 15em;
+    margin: .7em;
+    
+}
+
+.trabalhos{
+    padding-right: 9.3em;
+    padding-top: 5em;
+    padding-bottom: 5em;
+}
+
+.barraBusca{
+    display: flex;
+    flex-direction: row;
+    position:absolute;
+    justify-content: center;
+    padding: 1em;
+    width: 100%;
+}
+.pesquisa {
+    display: flex;
+    width: 50%;
+    border-radius: 4em;
+}
+
+.searchButton button:hover{
+    background-color: #5fc2b0;
+    border-color: #5fc2b0;
+    color:#141414 ;
+    border-radius: 4em;
+}
+.searchButton {
+    border-radius: 4em;
+    font-size: 1em;
+}
+.icon{
+    width:7em;
+    height: 3em;
+    padding: 0.2em;
+}

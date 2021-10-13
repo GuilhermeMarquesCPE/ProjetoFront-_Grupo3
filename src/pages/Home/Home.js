@@ -25,8 +25,8 @@ function Home(){
                     alt="First slide"
                     />
                     <Carousel.Caption>
-                    <h3>First slide label</h3>
-                    <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                    <h3>Engenheiros</h3>
+                    <p>Elaboração de projetos diversificados</p>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item className="carrosselItem">
@@ -37,8 +37,8 @@ function Home(){
                     />
 
                     <Carousel.Caption>
-                    <h3>Second slide label</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <h3>Pintores</h3>
+                    <p>Decoração de paredes e outras superfícies</p>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item className="carrosselItem">
@@ -49,8 +49,8 @@ function Home(){
                     />
 
                     <Carousel.Caption>
-                    <h3>Third slide label</h3>
-                    <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                    <h3>Professor Particular</h3>
+                    <p>Reforço para diferentes disciplinas</p>
                     </Carousel.Caption>
                 </Carousel.Item>
     </Carousel>
@@ -59,19 +59,15 @@ function Home(){
     <br/>
     <br/>
     <div className="bora">
-        <div className="titulo">
-            <p>#BoraFazerDiferente</p>
-        </div>
+            <p className="titulo">#BoraFazerDiferente</p>
         <div className="textoLogo">
-            <div className="texto">
-               <p>Encontre os serviços que 
+               <p className="encontre">Encontre os serviços que 
                 <br/>
                 você precisa e ajude a
                 <br/> 
                 divulgar os trabalhadores 
                 <br/>
                 autônomos de todo o Brasil</p> 
-            </div>
             <img src="/Images/logoescura.jfif" alt="logo" className="logo"></img>
         </div>
 

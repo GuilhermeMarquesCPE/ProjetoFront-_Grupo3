@@ -22,7 +22,7 @@
 
 
 .bora {
-    padding: 5em;
+    padding: 3em;
     background-color: #5FC2B0;
     display: flex;
     flex-direction: column;
@@ -31,31 +31,27 @@
 .titulo {
     display: flex;
     flex-direction: column;
-    vertical-align: middle;
-    margin-left: 11%;
-    font-size: larger;
+    align-items: center;   
     font-family: 'Fira Sans', sans-serif;
-    font-weight: 500;
+    font-weight: 700;
     font-size: 600%;
 }
 
 .textoLogo {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    margin-left: 18%;
-    margin-right: 11%
+    align-items: center;
+    justify-content: center;
+
 }
-.texto{
+.encontre{
     font-family: 'Fira Sans', sans-serif;
     font-weight: 400;
-    font-size: 250%;
+    font-size: 200%;
 }
 .logo{
-    width:30%;
-    padding: 1%;
+    width:20%;
 }
-
 .botoes {
     display: flex;
     justify-content: space-between;

@@ -7,6 +7,7 @@ import Login from "../Login/Login";
 import Servicos from "../Servicos/Servicos";
 import Navbar from "../../Components/Navbar";
 import Footer from "../../Components/Footer";
+import {FaRegEye, FaWrench, FaHandshake} from "react-icons/fa";
 
 function Home(){
     return (
@@ -59,33 +60,65 @@ function Home(){
     <br/>
     <div className="bora">
         <div className="titulo">
-            <h1>#BoraFazerAcontecer</h1>
+            <p>#BoraFazerDiferente</p>
         </div>
         <div className="textoLogo">
-            <p>Encontre os serviços que 
+            <div className="texto">
+               <p>Encontre os serviços que 
                 <br/>
                 você precisa e ajude a
                 <br/> 
                 divulgar os trabalhadores 
                 <br/>
-                autônomos de todo o Brasil</p>
-                <img src="/Images/logoescura.jfif" alt="logo" className="logo"></img>
+                autônomos de todo o Brasil</p> 
+            </div>
+            <img src="/Images/logoescura.jfif" alt="logo" className="logo"></img>
         </div>
 
         <div className="botoes">
             <Link to="servicos">
-                <Button variant="outline-dark" onClick={Servicos}>Encontrar profissional</Button>
+                <button type="button" class="btn btn-outline-dark btn-lg" onClick={Servicos}>Encontrar profissional</button>
             </Link>
             <Link to="Cadastro">
-                <Button variant="outline-dark" onClick={Cadastro}>Quero trabalhar</Button>
+                <button type="button" class="btn btn-outline-dark btn-lg" onClick={Cadastro}>Quero trabalhar</button>
             </Link>
         </div>
         </div>
+    <br/>
+    <br/>
+    <br/>
+    <div className="notas">
+        <div className="missao">
+            <p className="titleMissao">MISSÃO <FaWrench/></p>
+            <p className="notasMissao"> Divulgar trabalhadores
+                <br/> autônomos 
+                <br/>competentes, a fim de 
+                <br/>serem reconhecidos e 
+                <br/>se tornarem referência 
+                <br/>em sua área de atuação</p>
+        </div>
+        <div className="visao">
+            <p className="titleVisao">VISÃO <FaRegEye/></p>
+            <p className="notasVisao">Fornecer o suporte
+                <br/> digital necessário para 
+                <br/>difundir capacidades 
+                <br/>pouco valorizadas</p>
+        
+        </div>
+            <div className="valores">
+            <p className="titleValores">VALORES <FaHandshake/> </p>
+            <p className="notasValores">• Trabalho em equipe
+                <br/> • Profissionalismo
+                <br/> • Respeito
+                <br/> • Disponibilidade</p>
+        </div>  
+    </div>
     <br/>
     <br/>
     <br/>
     <div className="historia">
-        <div className="textoHist">
+        <div className="margem">
+            <div className="textoHist">
             <p>A AutonomEASY é uma empresa do ramo de
                 <br/>
                 serviços fundada por Júlia em 2000. Conta com
@@ -103,10 +136,13 @@ function Home(){
                 potencial impacto positivo que o trabalho 
                 <br/>
                 independente pode causar.</p>
-                <img src="/Images/carrinho.jfif" alt="logo" className="logo"></img>
         </div>
-
+                <img src="/Images/carrinho.jfif" alt="logo" className="desenho"></img>
     </div>
+        </div>
+    <br/>
+    <br/>
+    <br/>
     <Footer/>
     </div>
     )

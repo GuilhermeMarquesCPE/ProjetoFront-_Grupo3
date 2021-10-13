@@ -1,0 +1,33 @@
+.servico {
+    background: #FFFFFF;
+    
+}
+
+.barraBusca {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 2%;
+    
+    }
+.pesquisa {
+    display: flex;
+    width: 50%;
+    border-radius: 4em;
+}
+
+.searchButton button:hover{
+    background-color: #5fc2b0;
+    border-color: #5fc2b0;
+    color:#141414 ;
+    border-radius: 4em;
+}
+.searchButton {
+    border-radius: 4em;
+    font-size: 1em;
+}
+.icon{
+    width:7em;
+    height: 3em;
+    padding: 0.2em;
+}

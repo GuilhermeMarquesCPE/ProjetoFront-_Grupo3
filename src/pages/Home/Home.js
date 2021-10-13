@@ -7,6 +7,7 @@ import Login from "../Login/Login";
 import Servicos from "../Servicos/Servicos";
 import Navbar from "../../Components/Navbar";
 import Footer from "../../Components/Footer";
+import {FaRegEye, FaWrench, FaHandshake} from "react-icons/fa";
 
 function Home(){
     return (
@@ -76,13 +77,42 @@ function Home(){
 
         <div className="botoes">
             <Link to="servicos">
-                <Button variant="outline-dark" onClick={Servicos}>Encontrar profissional</Button>
+                <button type="button" class="btn btn-outline-dark btn-lg" onClick={Servicos}>Encontrar profissional</button>
             </Link>
             <Link to="Cadastro">
-                <Button variant="outline-dark" onClick={Cadastro}>Quero trabalhar</Button>
+                <button type="button" class="btn btn-outline-dark btn-lg" onClick={Cadastro}>Quero trabalhar</button>
             </Link>
         </div>
         </div>
+    <br/>
+    <br/>
+    <br/>
+    <div className="notas">
+        <div className="missao">
+            <p className="titleMissao">MISSÃO <FaWrench/></p>
+            <p className="notasMissao"> Divulgar trabalhadores
+                <br/> autônomos 
+                <br/>competentes, a fim de 
+                <br/>serem reconhecidos e 
+                <br/>se tornarem referência 
+                <br/>em sua área de atuação</p>
+        </div>
+        <div className="visao">
+            <p className="titleVisao">VISÃO <FaRegEye/></p>
+            <p className="notasVisao">Fornecer o suporte
+                <br/> digital necessário para 
+                <br/>difundir capacidades 
+                <br/>pouco valorizadas</p>
+        
+        </div>
+            <div className="valores">
+            <p className="titleValores">VALORES <FaHandshake/> </p>
+            <p className="notasValores">• Trabalho em equipe
+                <br/> • Profissionalismo
+                <br/> • Respeito
+                <br/> • Disponibilidade</p>
+        </div>  
+    </div>
     <br/>
     <br/>
     <br/>
@@ -108,11 +138,11 @@ function Home(){
                 independente pode causar.</p>
         </div>
                 <img src="/Images/carrinho.jfif" alt="logo" className="desenho"></img>
-
-
     </div>
         </div>
-        
+    <br/>
+    <br/>
+    <br/>
     <Footer/>
     </div>
     )

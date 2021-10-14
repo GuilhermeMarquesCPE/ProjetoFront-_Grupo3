@@ -1,12 +1,12 @@
 import React, { useState } from "react";
-import "./cadastro.css";
+import "./AlterarDados.css";
 import { Form, Button, Dropdown, DropdownButton } from "react-bootstrap";
 import { useHistory, Link } from "react-router-dom"; 
 import Navbar from "../../Components/Navbar";
 import Footer from "../../Components/Footer";
 
 
-function Cadastro(){
+function AlterarDados(){
     
     function cadastro(){
         history.push("login");
@@ -25,7 +25,7 @@ function Cadastro(){
         <div className="cadastro">
             <Navbar/>
             <div className="container">
-                <p className="cadastre">Cadastre-se em AutonomEASY</p>
+                <p className="cadastre">Altere os dados do seu perfil</p>
                 <div className="Formulario">
                     <Form className="inputs">
                         <Form.Group className="mb-3" controlId="Nome">
@@ -44,17 +44,11 @@ function Cadastro(){
                         <Form.Group className="mb-3" controlId="Cidade">
                             <Form.Control type="Cidade" placeholder="Cidade" onChange={(e) => setCidade(e.target.value)} />
                         </Form.Group>
-                        <Form.Group className="mb-3" controlId="senha">
-                            <Form.Control type="password" placeholder="Senha" onChange={(e) => setPassword(e.target.value)} />
-                        </Form.Group>
-                        <Form.Group className="mb-3" controlId="ConfirmPass">
-                            <Form.Control type="password" placeholder="Confirmar senha" onChange={(e) => setConfirmPassword(e.target.value)} />
-                        </Form.Group>
                     </Form>
                     </div>
 
                     <DropdownButton className="dropButton" title="Trabalhos oferecidos" >
-                        <Dropdown.Item as="button">Pintor</Dropdown.Item>
+                    <Dropdown.Item as="button">Pintor</Dropdown.Item>
                         <Dropdown.Item as="button">Professor Particular</Dropdown.Item>
                         <Dropdown.Item as="button">Engenheiro</Dropdown.Item>
                         <Dropdown.Item as="button">Fotógrafo</Dropdown.Item>
@@ -65,13 +59,12 @@ function Cadastro(){
                         <Dropdown.Item as="button">Cuidador de Pets</Dropdown.Item>
                         <Dropdown.Item as="button">Editor de Video</Dropdown.Item>
                         <Dropdown.Item as="button">Costureiro</Dropdown.Item>
-
                     </DropdownButton>
-                    <p className="cadastre2"> Faça uma descrição sobre voce! (Pontos fortes, anos de experiência, etc) :</p>
+                    <p className="cadastre2"> Altere sua descrição! (Pontos fortes, anos de experiência, etc) :</p>
                     <textarea className="descricao"> </textarea>
 
                     <div className="CadastrarButton">
-                        <Button variant="outline-dark" onClick={cadastro}>Cadastrar</Button>
+                        <Button variant="outline-dark" onClick={cadastro}>Salvar alterações</Button>
                     </div>  
             </div>
             <Footer/>
@@ -79,4 +72,4 @@ function Cadastro(){
     );
 }
 
-export default Cadastro;
+export default AlterarDados;

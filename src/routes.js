@@ -9,6 +9,8 @@ import Perfil from "./pages/Perfil";
 import Menu from "./pages/Menu";
 import Navbar from "./Components/Navbar";
 import Footer from "./Components/Footer";
+import AlterarDados from "./pages/AlterarDados";
+
 
 function Routes(){
     return(
@@ -22,6 +24,8 @@ function Routes(){
                 <Route path="/temp" component={Menu} />
                 <Route path="/navbar" component={Navbar} />
                 <Route path="/footer" component={Footer} />
+                <Route path="/alterardados" component={AlterarDados} />
+                
             </Switch>
         </BrowserRouter>
     )    

@@ -30,14 +30,25 @@
 }
 
 .ChangeData {
-    padding-top: 0.5em;
     font-family: 'Fira Sans';
     text-decoration: none;
-    color: #5fc2b0;
-    padding-bottom: 0.5em;
+    color: #5FC2B0;
+    padding-right: 1em;
 }
-
+.change {
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    flex-direction: row;
+}
+.ChangePassword {
+    font-family: 'Fira Sans';
+    text-decoration: none;
+    color: #5FC2B0;
+}
 .ChangeData:hover {
+    color: #FCC034;
+}
+.ChangePassword:hover {
     color: #FCC034;
 }
 
@@ -63,7 +74,7 @@
 
 }
 
-.icon {
+.iconperfil {
     width: 2em;
     height: 2em;
     padding-bottom: 0.7em;

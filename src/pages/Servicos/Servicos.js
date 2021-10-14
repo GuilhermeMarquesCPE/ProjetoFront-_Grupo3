@@ -13,7 +13,7 @@ function Servicos(){
                 <input class="form-control me-2" type="search" placeholder="Pesquisar por profissional" aria-label=" Pesquisar por profissional" className="pesquisa"></input>
                     <div className="searchButton">
                         <button class="btn btn-outline-success" type="submit">
-                            <BiSearchAlt className="icon"/> Buscar
+                            <BiSearchAlt className="iconservicos"/>Buscar
                         </button>
                     </div>
             </form>
@@ -37,7 +37,7 @@ function Servicos(){
                     <Button variant="outline-dark" className="emprego">Cuidador de pets</Button> <br/>
                     <Button variant="outline-dark" className="emprego">Cozinheiro</Button> 
                     <Button variant="outline-dark" className="emprego">Costureiro</Button><br/> 
-                    <Button variant="outline-dark" className="emprego">Encanador</Button>
+                    <Button variant="outline-dark" className="emprego">Babá</Button>
                         
                 </div>
             </div>

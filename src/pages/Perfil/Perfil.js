@@ -16,37 +16,38 @@ function Perfil() {
           <h1 className="icone">N</h1>
         </Avatar>
         <div className="informacoes">
-          <p> Nome: </p>
-          <p> Email: </p>
+          <p> Nome: Matheus Profissional</p>
+          <p> Email: matheusprofissional@gmail.com</p>
         </div>
-        <Link to="cadastro" className="ChangeData">
-          Alterar dados
-        </Link>
+        <div className="change">
+        <Link to="alterardados" className="ChangeData"> Alterar dados </Link>
+        <Link to="cadastro" className="ChangePassword"> Alterar senha </Link>
+        </div>
       </div>
         <div className="dados">
           <div className="line">
-            <MdPerson className="icon" />
-            <p>Nome:</p>
+            <MdPerson className="iconperfil" />
+            <p>Nome: </p>
           </div>
           <div className="line">
-            <MdLocationPin className="icon" />
-            <p>Estado:</p>
+            <MdLocationPin className="iconperfil" />
+            <p>Estado: </p>
           </div>
           <div className="line">
-            <MdLocationCity className="icon" />
-            <p>Cidade:</p>
+            <MdLocationCity className="iconperfil" />
+            <p>Cidade: </p>
           </div>
           <div className="line">
-            <MdWork className="icon" />
-            <p>Tipo de Serviço:</p>
+            <MdWork className="iconperfil" />
+            <p>Tipo de Serviço: </p>
           </div>
           <div className="line">
-            <MdEditNote className="icon" />
-            <p>Descrição:</p>
+            <MdEditNote className="iconperfil" />
+            <p>Descrição: </p>
           </div>
           <div className="line">
-            <MdCall className="icon" />
-            <p>Contato:</p>
+            <MdCall className="iconperfil" />
+            <p>Contato: </p>
           </div>
       </div>
       <Footer />

@@ -65,6 +65,7 @@ function Cadastro(){
                         <Dropdown.Item as="button">Cuidador de Pets</Dropdown.Item>
                         <Dropdown.Item as="button">Editor de Video</Dropdown.Item>
                         <Dropdown.Item as="button">Costureiro</Dropdown.Item>
+                        <Dropdown.Item as="button">Enfermeiro</Dropdown.Item>
 
                     </DropdownButton>
                     <p className="cadastre2"> Faça uma descrição sobre voce! (Pontos fortes, anos de experiência, etc) :</p>

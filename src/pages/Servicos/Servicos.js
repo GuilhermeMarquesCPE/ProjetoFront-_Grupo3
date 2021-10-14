@@ -38,6 +38,7 @@ function Servicos(){
                     <Button variant="outline-dark" className="emprego">Cozinheiro</Button> 
                     <Button variant="outline-dark" className="emprego">Costureiro</Button><br/> 
                     <Button variant="outline-dark" className="emprego">Babá</Button>
+                    <Button variant="outline-dark" className="emprego">Enfermeiro</Button><br/>
                         
                 </div>
             </div>

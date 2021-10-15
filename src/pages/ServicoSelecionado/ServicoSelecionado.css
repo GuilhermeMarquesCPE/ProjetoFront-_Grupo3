@@ -167,6 +167,7 @@
     height: 50%;
     border-color: black;
     border-style: solid;
+    padding-left: 1%;
 }
 
 .Comentarios1 {
@@ -186,6 +187,12 @@
     width:20%;
     height: 50%;
     border-radius: 0.5em;
+}
+
+.titleSS {
+    display: flex;
+    flex-direction: center;
+    justify-content: center;
 }
 
 

@@ -32,9 +32,6 @@ function AlterarDados(){
                         <br/>
                             <Form.Control type="nome" placeholder="Nome" onChange={(e) => setNome(e.target.value)} />
                         </Form.Group>
-                        <Form.Group className="mb-3" controlId="Email">
-                            <Form.Control type="email" placeholder="Email" onChange={(e) => setEmail(e.target.value)} />
-                        </Form.Group>
                         <Form.Group className="mb-3" controlId="Celular">
                             <Form.Control type="Celular" placeholder="Contato" onChange={(e) => setCelular(e.target.value)} />
                         </Form.Group>

@@ -10,7 +10,7 @@ function ServicoSelecionado() {
   return (
     <div className="baseSS">
       <Navbar />
-      <h1 className="title">ServicoSelecionado</h1>
+      <h1 className="titleSS">ServicoSelecionado</h1>
       <div className="especificacoes">
         <p className="description">Especificações</p>
       </div>

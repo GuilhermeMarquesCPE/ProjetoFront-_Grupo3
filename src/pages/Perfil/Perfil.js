@@ -24,7 +24,7 @@ function Perfil() {
         <Link to="cadastro" className="ChangePassword"> Alterar senha </Link>
         </div>
       </div>
-        <div className="dados">
+        <div className="dadosPerfil">
           <div className="line">
             <MdPerson className="iconperfil" />
             <p>Nome: </p>

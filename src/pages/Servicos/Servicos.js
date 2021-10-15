@@ -11,10 +11,10 @@ function Servicos(){
         <div className="Servicos">
             <Navbar/>
             <form className="barraBusca">
-                <input class="form-control me-2" type="search" placeholder="Pesquisar por profissional" aria-label=" Pesquisar por profissional" className="pesquisa"></input>
+                <input class="form-control me-2" type="search" placeholder="Pesquisar por profissional" className="pesquisa"></input>
                     <div className="searchButton">
-                        <button class="btn btn-outline-success" type="submit">
-                            <BiSearchAlt className="iconservicos"/>Buscar
+                        <button class="btn btn-outline-success btn-sm" type="button">
+                             <BiSearchAlt className="iconservicos"/>Buscar
                         </button>
                     </div>
             </form>
@@ -32,7 +32,7 @@ function Servicos(){
                     <Button variant="outline-dark" className="emprego">Fotógrafos</Button> <br/>
                     <Button variant="outline-dark" className="emprego">Engenheiros</Button>
                     <Button variant="outline-dark" className="emprego">Encanador</Button> <br/>
-                    <Button variant="outline-dark" className="emprego">Programador</Button>
+                    <Button variant="outline-dark" className="emprego" >Programador</Button>
                     <Button variant="outline-dark" className="emprego">Editor de vídeo</Button> <br/>
                     <Button variant="outline-dark" className="emprego">Pintor</Button> 
                     <Button variant="outline-dark" className="emprego">Cuidador de pets</Button> <br/>

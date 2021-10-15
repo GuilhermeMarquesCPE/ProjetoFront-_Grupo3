@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@200&display=swap');
 
 .especificacoes{
     display: flex;
@@ -26,9 +27,159 @@
     justify-content: center;
     align-items: center;
     padding: 2%;
+    margin-right: 5%;
+    margin-left: 5%;
+    border-radius: 1em;
+}
+.dadosSS {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3%;
+
 }
 .caixa1 {
+    display: flex;
+    flex-direction: row;
     border-style: solid;
     border-radius: 1em;
     width: 50%;
+    justify-content: space-between;
+    padding-right: 2%;
+    padding-left: 2%;
+    
 }
+
+
+
+.perfilAzul {
+    background-color: #FABE36;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+    margin-right: 5%;
+    margin-left: 5%;
+    border-radius: 1em;
+}
+.caixa2 {
+    display: flex;
+    flex-direction: row;
+    border-style: solid;
+    border-radius: 1em;
+    width: 50%;
+    justify-content: space-between;
+    padding-right: 2%;
+    padding-left: 2%;
+}
+
+
+
+
+.perfilClaro {
+    background-color: #5FC2B0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+    margin-right: 5%;
+    margin-left: 5%;
+    border-radius: 1em;
+}
+.caixa3 {
+    display: flex;
+    flex-direction: row;
+    border-style: solid;
+    border-radius: 1em;
+    width: 50%;
+    justify-content: space-between;
+    padding-right: 2%;
+    padding-left: 2%;
+}
+
+
+
+.perfilLaranjaClaro {
+    background-color: #FABE36;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+    margin-right: 5%;
+    margin-left: 5%;
+    border-radius: 1em;
+}
+.caixa4 {
+    display: flex;
+    flex-direction: row;
+    border-style: solid;
+    border-radius: 1em;
+    width: 50%;
+    justify-content: space-between;
+    padding-right: 2%;
+    padding-left: 2%;
+}
+
+
+
+
+    .iconeSS {
+        padding-top: 0.2em;
+        font-size: 4em;
+        color: black;
+        font-family: 'Fira Sans';
+    }
+
+
+
+.tudoComentarios {
+    background-color: #5FC2B0;
+    margin-right: 5%;
+    margin-left: 5%;
+    border-radius: 1em;
+}
+
+.barraConteAqui {
+    display: flex;
+    flex-direction: row;
+    margin-left: 5%;
+    margin-right: 5%;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.perguntaSS {
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 200;
+    font-size: 150%;
+}
+
+.textoConteAqui {
+    background-color: #5FC2B0;
+    width: 50%;
+    border-radius: 4em;
+    height: 50%;
+}
+
+.Comentarios1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: 11%;
+    margin-left: 11%;
+
+
+}
+
+.C1 {
+    border-style: solid;
+    width:20%;
+    height: 50%;
+    border-radius: 0.5em;
+}
+
+
+

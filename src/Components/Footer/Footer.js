@@ -13,10 +13,10 @@ function Footer(){
         <div className="rodape">
             <div className="text1">
                 <p className="text3">Entrem em contato!</p>
-                <FaFacebookSquare className="icon"/>
-                <BsInstagram className="icon"/>
-                <IoLogoWhatsapp className="icon"/>
-                <BsLinkedin className="icon"/>
+                <FaFacebookSquare className="iconFooter"/>
+                <BsInstagram className="iconFooter"/>
+                <IoLogoWhatsapp className="iconFooter"/>
+                <BsLinkedin className="iconFooter"/>
             </div>
             <div className="Ficouduvida">
                 <p className="text3">Ficou alguma dúvida?</p>

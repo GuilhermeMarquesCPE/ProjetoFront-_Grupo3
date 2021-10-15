@@ -15,11 +15,15 @@
 }
 .text2{
     font-size: 1em;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 400;
 }
 .text3{
     font-size: 1.8em;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 400;
 }
-.icon{
+.iconFooter{
     width:3em;
     height: 3em;
 }

@@ -88,7 +88,6 @@ function ServicoSelecionado() {
             <Button variant="outline-dark">Ver mais</Button>{" "}
           </div>
         </div>
-        <br />
       </div>
       <div className="tudoComentarios">
         <div className="barraConteAqui">
@@ -104,13 +103,24 @@ function ServicoSelecionado() {
         </div>
         <div className="Comentarios1">
             <div className="C1">
-                " <br/><br/><br/><br/><br/><br/>    "
+                <p>" <br/><br/><br/><br/><br/> "</p>
             </div>
             <div className="C1">
-                "    A     "
+                <p>" <br/><br/><br/><br/><br/> "</p>
             </div>
             <div className="C1">
-                "    A     "
+                <p>" <br/><br/><br/><br/><br/> "</p>
+            </div>
+        </div>
+        <div className="Comentarios1">
+            <div className="C1">
+                <p>" <br/><br/><br/><br/><br/> "</p>
+            </div>
+            <div className="C1">
+                <p>" <br/><br/><br/><br/><br/> "</p>
+            </div>
+            <div className="C1">
+                <p>" <br/><br/><br/><br/><br/> "</p>
             </div>
         </div>
         <div className="Comentarios2"></div>

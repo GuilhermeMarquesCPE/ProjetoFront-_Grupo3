@@ -122,23 +122,24 @@
     padding-left: 2%;
 }
 
-
-
-
-    .iconeSS {
-        padding-top: 0.2em;
-        font-size: 4em;
-        color: black;
-        font-family: 'Fira Sans';
-    }
+.iconeSS {
+    padding-top: 0.2em;
+    font-size: 4em;
+    color: black;
+    font-family: 'Fira Sans';
+}
 
 
 
 .tudoComentarios {
+    display: flex;
+    flex-direction: column;
     background-color: #5FC2B0;
     margin-right: 5%;
     margin-left: 5%;
     border-radius: 1em;
+    margin-bottom: 5%;
+    margin-top: 5%;
 }
 
 .barraConteAqui {
@@ -148,13 +149,15 @@
     margin-right: 5%;
     justify-content: space-between;
     align-items: center;
-
+    margin-top: 2%;
+    margin-bottom: 2%;
 }
 
 .perguntaSS {
     font-family: 'Fira Sans', sans-serif;
     font-weight: 200;
     font-size: 150%;
+    margin-top: 1%;
 }
 
 .textoConteAqui {
@@ -162,6 +165,8 @@
     width: 50%;
     border-radius: 4em;
     height: 50%;
+    border-color: black;
+    border-style: solid;
 }
 
 .Comentarios1 {
@@ -170,11 +175,13 @@
     justify-content: space-between;
     margin-right: 11%;
     margin-left: 11%;
-
+    margin-bottom: 3%;
 
 }
 
 .C1 {
+    display: flex;
+    word-break: break-word;
     border-style: solid;
     width:20%;
     height: 50%;

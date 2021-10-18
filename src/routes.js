@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Route, Switch } from "react-router-dom";
+import { BrowserRouter, Route, Switch, Redirect } from "react-router-dom";
 
 import Login from "./pages/Login";
 import Home from "./pages/Home";
@@ -17,17 +17,18 @@ function Routes(){
     return(
         <BrowserRouter>
             <Switch> 
-                <Route path="/login" component={Login} />
-                <Route path="/home" component={Home} />
-                <Route path="/cadastro" component={Cadastro} />
-                <Route path="/servicos" component={Servicos} />
-                <Route path="/perfil" component={Perfil} />
-                <Route path="/temp" component={Menu} />
-                <Route path="/navbar" component={Navbar} />
-                <Route path="/footer" component={Footer} />
-                <Route path="/alterardados" component={AlterarDados} />
-                
-                <Route path="/servicoselecionado" component={ServicoSelecionado} />
+                <Route exact path="/login" component={Login} />
+                <Route exact path="/cadastro" component={Cadastro} />
+                <Route exact path="/servicos" component={Servicos} />
+                <Route exact path="/perfil" component={Perfil} />
+                <Route exact path="/temp" component={Menu} />
+                <Route exact path="/navbar" component={Navbar} />
+                <Route exact path="/footer" component={Footer} />
+                <Route exact path="/alterardados" component={AlterarDados} />
+                <Route exact path="/servicoselecionado" component={ServicoSelecionado} />
+                <Route path="/">
+                    <Home/>
+                </Route>
             </Switch>
         </BrowserRouter>
     )    

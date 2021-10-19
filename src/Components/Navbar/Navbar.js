@@ -4,9 +4,9 @@ import "./Navbar.css";
 
 function Navbar() {
     return (
-    <div className="cabecalho">
+    <div className="cabecalhoN">
 
-            <img src="/Images/logo.png" alt="logo" className="logo"></img>
+            <img src="/Images/logo.png" alt="logo" className="logoN"></img>
 
             <div className="navbar">
                 <Link to="home" className="navbarLink">Home</Link>

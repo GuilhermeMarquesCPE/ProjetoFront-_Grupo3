@@ -1,12 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital@1&display=swap');
 
-.base {
+.baseP {
     height: auto;
     display: flex;
     flex-direction:column;
     font-family: 'Fira Sans';
     justify-content: center;
     vertical-align: middle;
+    background-image: url("./brancobackground.jpg");
 }
 
 .profile {
@@ -16,13 +17,13 @@
     padding-bottom: 0em;
 }
 
-.frase {
+.fraseP {
     padding-bottom: 1em;
     padding-top: 1em;
     margin-right: 60%;
 }
 
-.icone {
+.iconeP {
     padding-top: 0.2em;
     font-size: 4em;
     color: black;
@@ -52,7 +53,7 @@
     color: #FCC034;
 }
 
-.informacoes{
+.informacoesP{
     padding-top: 1em;
     line-height: 0.5em;
 }
@@ -71,7 +72,7 @@
     margin-top:  3%;
 }
 
-.line {
+.lineP {
     display: flex;
 
 }

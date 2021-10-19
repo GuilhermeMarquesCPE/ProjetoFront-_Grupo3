@@ -16,11 +16,11 @@ function Login() {
   }
 
     return (
-     <div className="base">
+     <div className="baseL">
        <Navbar/>
-        <div className="container">
+        <div className="containerL">
                <img src="/images/image.png" alt="Entre"/>
-               <Form className="inputs">
+               <Form className="inputsL">
                 <Form.Group className="mb-3" controlId="Email">
                 <br/>
                   <Form.Control type="email" placeholder="Email" onChange={(e) => setEmail(e.target.value)} />
@@ -33,7 +33,7 @@ function Login() {
                   <Button variant="outline-dark" onClick={login}>Entrar</Button>
                 </div>
                 
-                <p className="novo"> Novo no AutonomEASY? <Link to="cadastro" className="CadastroLink"> Cadastre-se</Link> </p>
+                <p className="novoL"> Novo no AutonomEASY? <Link to="cadastro" className="CadastroLinkL"> Cadastre-se</Link> </p>
             </div>
             <Footer/>
         </div>

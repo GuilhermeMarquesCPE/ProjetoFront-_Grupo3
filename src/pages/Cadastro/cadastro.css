@@ -3,6 +3,7 @@
 .cadastro {
     display: flex;
     flex-direction: column;
+    background-image: url(./brancobackground.jpg);
 }
 
 .cadastre{
@@ -10,13 +11,13 @@
     font-family: 'Fira Sans';
 }
 
-.Container {
+.containerC{
     display: flex;
     flex-direction: column;
     justify-content:center;
-    vertical-align: middle;
+    align-items: center;
 }
-.inputs{
+.inputsC{
     width: 30em;
 }
 .dropButton{
@@ -36,7 +37,7 @@
     color:#141414 ;
     
 }
-.descricao{
+.descricaoC{
     width: 30em;
     height: 10em;
     border-style:inset;

@@ -59,19 +59,19 @@ function Home(){
     <br/>
     <br/>
     <div className="bora">
-            <p className="titulo">#BoraFazerDiferente</p>
-        <div className="textoLogo">
-               <p className="encontre">Encontre os serviços que 
+            <p className="tituloH">#BoraFazerDiferente</p>
+        <div className="textoLogoH">
+               <p className="encontreH">Encontre os serviços que 
                 <br/>
                 você precisa e ajude a
                 <br/> 
                 divulgar os trabalhadores 
                 <br/>
                 autônomos de todo o Brasil</p> 
-            <img src="/Images/logoescura.jfif" alt="logo" className="logo"></img>
+            <img src="/Images/logoescura.jfif" alt="logo" className="logoH"></img>
         </div>
 
-        <div className="botoes">
+        <div className="botoesH">
             <Link to="servicos">
                 <button type="button" class="btn btn-outline-dark btn-lg" onClick={Servicos}>Encontrar profissional</button>
             </Link>
@@ -83,7 +83,7 @@ function Home(){
     <br/>
     <br/>
     <br/>
-    <div className="notas">
+    <div className="notasH">
         <div className="missao">
             <p className="titleMissao">MISSÃO <FaWrench/></p>
             <p className="notasMissao"> Divulgar trabalhadores
@@ -113,7 +113,7 @@ function Home(){
     <br/>
     <br/>
     <div className="historia">
-        <div className="margem">
+        <div className="margemH">
             <div className="textoHist">
             <p>A AutonomEASY é uma empresa do ramo de
                 <br/>
@@ -133,7 +133,7 @@ function Home(){
                 <br/>
                 independente pode causar.</p>
         </div>
-                <img src="/Images/carrinho.jfif" alt="logo" className="desenho"></img>
+                <img src="/Images/carrinho.jfif" alt="logo" className="desenhoH"></img>
     </div>
         </div>
     <br/>

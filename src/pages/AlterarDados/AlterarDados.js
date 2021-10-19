@@ -22,12 +22,12 @@ function AlterarDados(){
     const [Estado, setEstado] = useState();
 
     return (
-        <div className="cadastro">
+        <div className="cadastroAlterar">
             <Navbar/>
-            <div className="container">
-                <p className="cadastre">Altere os dados do seu perfil</p>
-                <div className="Formulario">
-                    <Form className="inputs">
+            <div className="containerAD">
+                <p className="cadastreAD">Altere os dados do seu perfil</p>
+                <div className="FormularioAD">
+                    <Form className="inputsAD">
                         <Form.Group className="mb-3" controlId="Nome">
                         <br/>
                             <Form.Control type="nome" placeholder="Nome" onChange={(e) => setNome(e.target.value)} />
@@ -44,7 +44,7 @@ function AlterarDados(){
                     </Form>
                     </div>
 
-                    <DropdownButton className="dropButton" title="Trabalhos oferecidos" >
+                    <DropdownButton className="dropButtonAD" title="Trabalhos oferecidos" >
                     <Dropdown.Item as="button">Pintor</Dropdown.Item>
                         <Dropdown.Item as="button">Professor Particular</Dropdown.Item>
                         <Dropdown.Item as="button">Engenheiro</Dropdown.Item>
@@ -57,10 +57,10 @@ function AlterarDados(){
                         <Dropdown.Item as="button">Editor de Video</Dropdown.Item>
                         <Dropdown.Item as="button">Costureiro</Dropdown.Item>
                     </DropdownButton>
-                    <p className="cadastre2"> Altere sua descrição! (Pontos fortes, anos de experiência, etc) :</p>
-                    <textarea className="descricao"> </textarea>
+                    <p className="cadastre2AD"> Altere sua descrição! (Pontos fortes, anos de experiência, etc) :</p>
+                    <textarea className="descricaoAD"> </textarea>
 
-                    <div className="CadastrarButton">
+                    <div className="CadastrarButtonAD">
                         <Button variant="outline-dark" onClick={cadastro}>Salvar alterações</Button>
                     </div>  
             </div>

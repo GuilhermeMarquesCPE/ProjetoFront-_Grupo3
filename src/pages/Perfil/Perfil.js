@@ -8,14 +8,14 @@ import { MdLocationCity, MdLocationPin, MdWork, MdEditNote, MdCall, MdPerson} fr
 
 function Perfil() {
   return (
-    <div className="base">
+    <div className="baseP">
       <Navbar />
       <div className="profile">
-        <h2 className="frase">Bem Vindo, </h2>
+        <h2 className="fraseP">Bem Vindo, </h2>
         <Avatar sx={{ width: 150, height: 150, bgcolor: "#fabe36" }}>
-          <h1 className="icone">N</h1>
+          <h1 className="iconeP">N</h1>
         </Avatar>
-        <div className="informacoes">
+        <div className="informacoesP">
           <p> Nome: Matheus Profissional</p>
           <p> Email: matheusprofissional@gmail.com</p>
         </div>
@@ -25,27 +25,27 @@ function Perfil() {
         </div>
       </div>
         <div className="dadosPerfil">
-          <div className="line">
+          <div className="lineP">
             <MdPerson className="iconperfil" />
             <p>Nome: </p>
           </div>
-          <div className="line">
+          <div className="lineP">
             <MdLocationPin className="iconperfil" />
             <p>Estado: </p>
           </div>
-          <div className="line">
+          <div className="lineP">
             <MdLocationCity className="iconperfil" />
             <p>Cidade: </p>
           </div>
-          <div className="line">
+          <div className="lineP">
             <MdWork className="iconperfil" />
             <p>Tipo de Serviço: </p>
           </div>
-          <div className="line">
+          <div className="lineP">
             <MdEditNote className="iconperfil" />
             <p>Descrição: </p>
           </div>
-          <div className="line">
+          <div className="lineP">
             <MdCall className="iconperfil" />
             <p>Contato: </p>
           </div>

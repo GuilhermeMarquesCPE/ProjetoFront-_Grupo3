@@ -20,7 +20,7 @@ function Footer(){
             </div>
             <div className="Ficouduvida">
                 <p className="text3">Ficou alguma dúvida?</p>
-                <div className="email">
+                <div className="emailF">
                 <p className="text2"><AiOutlineMail className="iconEmail"/>  juliaempreendedora@gmail.com</p></div>  
             </div>
         </div>

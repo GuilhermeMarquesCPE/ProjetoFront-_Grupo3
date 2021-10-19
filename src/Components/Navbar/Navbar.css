@@ -1,4 +1,4 @@
-.cabecalho {
+.cabecalhoN{
     display: flex;
     background-color: #CBF3F0;
     justify-content: space-between;
@@ -16,7 +16,7 @@
     background-color: black;
     color: #CBF3F0;
 }
-.logo{
+.logoN{
     width:25%;
     padding: 1%;
     margin-left: 11%;

@@ -24,10 +24,10 @@ function Cadastro(){
     return (
         <div className="cadastro">
             <Navbar/>
-            <div className="container">
+            <div className="containerC">
                 <p className="cadastre">Cadastre-se em AutonomEASY</p>
                 <div className="Formulario">
-                    <Form className="inputs">
+                    <Form className="inputsC">
                         <Form.Group className="mb-3" controlId="Nome">
                         <br/>
                             <Form.Control type="nome" placeholder="Nome" onChange={(e) => setNome(e.target.value)} />
@@ -69,7 +69,7 @@ function Cadastro(){
 
                     </DropdownButton>
                     <p className="cadastre2"> Faça uma descrição sobre voce! (Pontos fortes, anos de experiência, etc) :</p>
-                    <textarea className="descricao"> </textarea>
+                    <textarea className="descricaoC"> </textarea>
 
                     <div className="CadastrarButton">
                         <Button variant="outline-dark" onClick={cadastro}>Cadastrar</Button>

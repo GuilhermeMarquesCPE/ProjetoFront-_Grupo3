@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital@1&display=swap');
 
-.conteudo{
+.conteudoS{
     display: flex;
     background-image: url("./fundoServicos.jpeg");
     background-position: center;
@@ -12,14 +12,14 @@
     display:flex;
     justify-content: space-between;
 }
-.text{
+.textS{
 
     font-family: 'Fira Sans';
     font-size: 4em;
 
 }
 
-.texto{
+.textoS{
     padding-left: 12em;
     padding-top: 5em;
     padding-bottom: 5em;
@@ -30,7 +30,6 @@
     height: 3em;
     width: 15em;
     margin: .7em;
-    
 }
 
 .trabalhos{

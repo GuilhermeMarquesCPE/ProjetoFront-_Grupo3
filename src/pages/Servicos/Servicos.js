@@ -7,6 +7,9 @@ import Navbar from "../../Components/Navbar";
 
 
 function Servicos(){
+    const data= [
+        "Professores Particulares", "Fotógrafos", "Engenheiros", "Encanadores", "Programadores", "Editores de Vídeo", "Pintores", "Cuidadores de Pet", "Cozinheiros", "Costureiros", "Babás", "Enfermeiros"
+    ]
     return (
         <div className="Servicos">
             <Navbar/>
@@ -18,28 +21,23 @@ function Servicos(){
                         </button>
                     </div>
             </form>
-            <div className="conteudo">
+            <div className="conteudoS">
                 
-                <div className="texto">
+                <div className="textoS">
                         
-                    <p className="text">
+                    <p className="textS">
                         Encontre o <br/>Profissional <br/> ideal no serviço<br/> que procura!
                     </p>
 
                 </div>
                 <div className="trabalhos">
-                    <Button variant="outline-dark" className="emprego">Professores particulares</Button>
-                    <Button variant="outline-dark" className="emprego">Fotógrafos</Button> <br/>
-                    <Button variant="outline-dark" className="emprego">Engenheiros</Button>
-                    <Button variant="outline-dark" className="emprego">Encanador</Button> <br/>
-                    <Button variant="outline-dark" className="emprego" >Programador</Button>
-                    <Button variant="outline-dark" className="emprego">Editor de vídeo</Button> <br/>
-                    <Button variant="outline-dark" className="emprego">Pintor</Button> 
-                    <Button variant="outline-dark" className="emprego">Cuidador de pets</Button> <br/>
-                    <Button variant="outline-dark" className="emprego">Cozinheiro</Button> 
-                    <Button variant="outline-dark" className="emprego">Costureiro</Button><br/> 
-                    <Button variant="outline-dark" className="emprego">Babá</Button>
-                    <Button variant="outline-dark" className="emprego">Enfermeiro</Button><br/>
+                    {data.map((element, index) => (
+                        <>
+                        <Button variant="outline-dark" className="emprego">{element}</Button> 
+                    {(index%2) ? (<br/>):<></>}
+                        </>
+                    ))}
+                    
                         
                 </div>
             </div>

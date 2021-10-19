@@ -1,21 +1,22 @@
-.container {
+.containerL{
     display: flex;
     flex-direction: column;
-    max-width: 500px;
     align-items: center;
-    flex-grow: 1;
+    justify-content: center;
     padding: 10em;
+
 }
 
-.base {
+.baseL {
     height: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     vertical-align: middle;
+    background-image: url("./brancobackground.jpg");
 }
 
-.inputs{
+.inputsL{
     display: flex;
     flex-direction: column;
     margin-left: 16px;
@@ -44,7 +45,7 @@
     color: #5fc2b0;
 }
 
-.novo {
+.novoL {
     display: flex;
     flex-direction: row;
     padding: 1em;

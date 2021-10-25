@@ -9,6 +9,7 @@ import Navbar from "../../Components/Navbar";
 import Footer from "../../Components/Footer";
 import {FaRegEye, FaWrench, FaHandshake} from "react-icons/fa";
 
+
 function Home(){
     return (
     <div className="home" >
@@ -142,6 +143,6 @@ function Home(){
     <Footer/>
     </div>
     )
-}
+    }
 
 export default Home;

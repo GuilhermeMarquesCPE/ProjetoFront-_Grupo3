@@ -16,7 +16,8 @@ function Navbar() {
                 <Link to="Login" className="navbarLink">Login</Link>
             </div>
 
-        </div>
+     </div>
+     
     );
 }
 

@@ -26,7 +26,7 @@ function Servicos(){
                 <div className="textoS">
                         
                     <p className="textS">
-                        Encontre o <br/>Profissional <br/> ideal no serviço<br/> que procura!
+                        Encontre o Profissional ideal no serviço que procura!
                     </p>
 
                 </div>

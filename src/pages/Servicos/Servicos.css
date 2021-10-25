@@ -2,6 +2,8 @@
 
 .conteudoS{
     display: flex;
+    align-items: center;
+    justify-content: center;
     background-image: url("./fundoServicos.jpeg");
     background-position: center;
     background-repeat: no-repeat;
@@ -20,9 +22,10 @@
 }
 
 .textoS{
-    padding-left: 12em;
     padding-top: 5em;
     padding-bottom: 5em;
+    padding-right: 1em;
+    width: 750px;
 }
 
 .emprego{
@@ -33,7 +36,7 @@
 }
 
 .trabalhos{
-    padding-right: 9.3em;
+
     padding-top: 5em;
     padding-bottom: 5em;
 }
@@ -67,11 +70,113 @@
 }
 .searchButton {
     margin-left: 1%;
+    width : 3em;
 }
 .iconservicos{
     width: 2em;
-    height:1.5em;
+    height: 1.5em;
     padding: 0.2em;
+}
 
-    
+
+@media (max-width : 1350px) {
+    .conteudoS {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .textoS{
+        text-align: center;
+        font-size: 0.7em;
+        padding-top: 25px;
+        padding-bottom: 0px;
+        padding-left: 0px;
+        
+    }
+    .trabalhos{
+        text-align: center;
+        padding-top: 0px;
+        padding-right: 0px;
+    }
+    .textS{
+        padding-left: 120px;
+        padding-right: 120px;
+        font-size:3em;
+        width:100%;
+    }
+    .searchButton{
+        width: 2em;
+    }
+}
+
+
+@media (max-width : 650px) {
+    .conteudoS {
+        display: flex;
+        flex-direction: column;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-color: #f8f8f8;
+    }
+    .textoS{
+        text-align: center;
+        font-size: 0.7em;
+        padding-top: 25px;
+        padding-bottom: 0px;
+        padding-left: 0px;
+        
+    }
+    .trabalhos{
+        text-align: center;
+        padding-top: 0px;
+        padding-right: 0px;
+    }
+    .textS{
+        padding-left: 120px;
+        padding-right: 120px;
+        font-size: 2em;
+        width:100%;
+    }
+    .emprego{
+        padding:2em;
+        height: 3em;
+        width: 15em;
+        margin: .7em;
+    }
+}
+
+
+@media (max-width : 500px) {
+    .conteudoS {
+        display: flex;
+        flex-direction: column;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-color: #f8f8f8;
+    }
+    .textoS{
+        text-align: center;
+        font-size: 0.7em;
+        padding-top: 25px;
+        padding-bottom: 0px;
+        padding-left: 0px;
+        
+    }
+    .trabalhos{
+        text-align: center;
+        padding-top: 0px;
+        padding-right: 0px;
+    }
+    .textS{
+        padding-left: 120px;
+        padding-right: 120px;
+        font-size: 1.5em;
+        width:100%;
+    }
+    .emprego{
+        padding:1.3em;
+        height: 2.5em;
+        width: 60%;
+        margin: .7em;
+    }
 }

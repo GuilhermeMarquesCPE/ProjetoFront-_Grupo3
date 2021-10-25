@@ -104,9 +104,7 @@
         font-size:3em;
         width:100%;
     }
-    .searchButton{
-        width: 2em;
-    }
+
 }
 
 
@@ -178,5 +176,48 @@
         height: 2.5em;
         width: 60%;
         margin: .7em;
+    }
+}
+
+@media (max-width : 320px) {
+    .conteudoS {
+        display: flex;
+        flex-direction: column;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-color: #f8f8f8;
+    }
+    .textoS{
+        text-align: center;
+        font-size: 0.55em;
+        padding-top: 20px;
+        padding-bottom: 0px;
+        padding-left: 0px;
+        
+    }
+    .trabalhos{
+        text-align: center;
+        padding-top: 0px;
+        padding-right: 0px;
+    }
+    .textS{
+        padding-left: 10%;
+        padding-right: 10%;
+        font-size: 1.2em;
+        width:100%;
+    }
+    .emprego{
+        padding:1.5em;
+        height: 2.5em;
+        width: 60%;
+        margin: .7em;
+    }
+    .btn-group-sm>.btn, .btn-sm {
+        padding: .25rem .5rem;
+        font-size: .55rem !important;
+        border-radius: .2rem;
+    }
+    .btn {
+        font-size: .8rem;
     }
 }

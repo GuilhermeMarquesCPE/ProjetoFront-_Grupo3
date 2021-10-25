@@ -27,27 +27,27 @@ function Perfil() {
         <div className="dadosPerfil">
           <div className="lineP">
             <MdPerson className="iconperfil" />
-            <p>Nome: <div>maria monteiro silva</div> </p>
-          </div>
+            <p>Nome: <div>Matheus Portela Carvalho Bastos</div></p>
+          </div> 
           <div className="lineP">
             <MdLocationPin className="iconperfil" />
-            <p>Estado: <div>aracaju sergipe</div> </p>
-          </div>
+            <p>Estado: <div>Minas Gerais</div> </p>
+          </div> 
           <div className="lineP">
             <MdLocationCity className="iconperfil" />
-            <p>Cidade: </p>
+            <p>Cidade: <div>Lavras</div> </p> 
           </div>
           <div className="lineP">
             <MdWork className="iconperfil" />
-            <p>Tipo de Serviço: </p>
+            <p>Tipo de Serviço: <div>Engenheiro</div> </p>
           </div>
           <div className="lineP">
             <MdEditNote className="iconperfil" />
-            <p>Descrição: <div>boa noite gente tudo bem co </div></p>
+            <p>Descrição: <div className="descricaop">Engenheiro recem formado, cursei engenharia de controle e automaçao na ufmg e blablablablablalablablablabla</div></p>
           </div>
           <div className="lineP">
             <MdCall className="iconperfil" />
-            <p>Contato: </p>
+            <p>Contato: <div>99 99999-9999</div></p>
           </div>
       </div>
       <Footer />

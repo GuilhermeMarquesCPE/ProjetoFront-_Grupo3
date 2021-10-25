@@ -72,3 +72,25 @@
         font-size: .85em;
     }
 }
+
+@media (max-width : 481px) {
+    .inputsC{
+        width: 15em;
+    }
+    .cadastre{
+        font-size: 1.5em;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+    .descricaoC{
+        width: 15em;
+        height: 7em;
+        border-style:inset;
+        border: 1px solid #ced4da
+    }
+    .cadastre2{
+        font-size: .85em;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+}

@@ -218,6 +218,6 @@
         border-radius: .2rem;
     }
     .btn {
-        font-size: .8rem;
+        font-size: .8rem !important;
     }
 }

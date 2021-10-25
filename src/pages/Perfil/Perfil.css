@@ -63,7 +63,6 @@
     flex-direction: column;
     font-size: 1.2em;
     background-color: #5FC2B0;
-    width: 60em;
     padding: 2em;
     margin-right: 11%;
     margin-left: 11%;
@@ -84,3 +83,11 @@
 }
 
 
+@media (max-width: 430px) {
+    .dadosPerfil {
+        display: flex;
+        flex-direction: column;
+        padding: 1em;
+        font-size: 1em;
+    }
+}

@@ -27,11 +27,11 @@ function Perfil() {
         <div className="dadosPerfil">
           <div className="lineP">
             <MdPerson className="iconperfil" />
-            <p>Nome: </p>
+            <p>Nome: <div>maria monteiro silva</div> </p>
           </div>
           <div className="lineP">
             <MdLocationPin className="iconperfil" />
-            <p>Estado: </p>
+            <p>Estado: <div>aracaju sergipe</div> </p>
           </div>
           <div className="lineP">
             <MdLocationCity className="iconperfil" />
@@ -43,7 +43,7 @@ function Perfil() {
           </div>
           <div className="lineP">
             <MdEditNote className="iconperfil" />
-            <p>Descrição: </p>
+            <p>Descrição: <div>boa noite gente tudo bem co </div></p>
           </div>
           <div className="lineP">
             <MdCall className="iconperfil" />

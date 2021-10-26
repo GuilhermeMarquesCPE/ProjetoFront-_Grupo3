@@ -6,10 +6,6 @@
     padding-right: 11%;
 }
 
-.navbar{
-    overflow: hidden; 
-}
-
 .navbarLink {
     font-size: 1.2em;
     padding: 15px;
@@ -17,11 +13,10 @@
     color: black;
 }
 .buttonNavbar{
-    background-color: transparent;
-    border: none;
-    color: black;
-    font-size: 2em;
+    font-size:2em;
     display: none;
+    width: 1.2em;
+    height: 1.2em;
 }
 .iconNavbar{
     display: flex;
@@ -49,8 +44,8 @@
     }
     .navbar {
         display: none;
-        flex-direction: column;
         height: 0;
+        width: 0;
     }
     .logoN{
         max-width: 75%;
@@ -58,6 +53,8 @@
     }
     .buttonNavbar{
         display: flex;
+        justify-content: center;
+        align-items: center;
     }
     .LogoButton{
         display: flex;

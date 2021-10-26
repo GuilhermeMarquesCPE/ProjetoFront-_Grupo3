@@ -1,0 +1,33 @@
+
+
+.navbardrawer{
+    display: flex;
+    flex-direction: column;
+}
+
+.DrawerLink{
+        font-size: 1.2em;
+        padding: 15px;
+        text-decoration: none;
+        color: black;
+}
+
+.DrawerLink:hover {
+    background-color: black; 
+    color:#CBF3F0; 
+}
+
+.HamburguerIcon {
+    width: 2em;
+    height: 2em;
+    color: black;
+}
+
+.HamburguerIcon:hover {
+    color: #CBF3F0;
+}
+
+.MuiPaper-root.MuiPaper-elevation.MuiPaper-elevation16.MuiDrawer-paper.MuiDrawer-paperAnchorAbrir.css-n6v7qi-MuiPaper-root-MuiDrawer-paper {
+    background-color:#CBF3F0; 
+}
+

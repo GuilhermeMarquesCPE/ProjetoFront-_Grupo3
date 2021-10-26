@@ -1,14 +1,15 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
+import TemporaryDrawer from "../TemporaryDrawer";
 
 
 function Navbar() {
     return (
     <div className="cabecalhoN">
             <div className="LogoButton">
+            <div className="buttonNavbar"><TemporaryDrawer/></div>
             <img src="/Images/logo.png" alt="logo" className="logoN"></img>
-            <button className="buttonNavbar">&#9776;</button>
             </div>
                          
             <div className="navbar">

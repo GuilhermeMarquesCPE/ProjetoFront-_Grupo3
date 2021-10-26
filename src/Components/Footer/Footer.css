@@ -11,7 +11,7 @@
 
 .text1{
     font-size: 1em;
-    padding-left: 12em;
+    padding-left: 11.3%;
 }
 .text2{
     font-size: 1em;
@@ -31,7 +31,7 @@
     font-size: 1em;
 }
 .Ficouduvida{
-    padding-right: 12em;
+    padding-right: 11.3%;
 }
 .iconEmail{
     width: 1.5em;
@@ -39,4 +39,44 @@
 }
 .emailF{
     display: flex;
+}
+
+@media (max-width:800px) {
+    .text1{
+        font-size: 0.7em;
+    }
+    .text2{
+        font-size: 0.7em;
+    }
+    .text3 {
+        font-size: 1.3em;
+    }
+    .iconFooter{
+        width: 2em;
+        height: 2em;
+    }
+    .iconEmail {
+        width: 1.1em;
+        height: 1.1em;
+    }
+}
+
+@media (max-width:320px) {
+    .text1{
+        font-size: .6em;
+    }
+    .text2{
+        font-size: .6em;
+    }
+    .text3 {
+        font-size: .65em;
+    }
+    .iconFooter{
+        width: 1.4em;
+        height: 1.4em;
+    }
+    .iconEmail {
+        width: .7em;
+        height: .7em;
+    }
 }

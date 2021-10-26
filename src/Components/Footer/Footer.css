@@ -60,6 +60,25 @@
         height: 1.1em;
     }
 }
+@media (max-width:380px) {
+    .text1{
+        font-size: .6em;
+    }
+    .text2{
+        font-size: .6em;
+    }
+    .text3 {
+        font-size: .65em;
+    }
+    .iconFooter{
+        width: 1.4em;
+        height: 1.4em;
+    }
+    .iconEmail {
+        width: .7em;
+        height: .7em;
+    }
+}
 
 @media (max-width:320px) {
     .text1{

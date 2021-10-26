@@ -31,6 +31,7 @@
 }
 .CadastrarButton{
     padding-top: 1em;
+    padding-bottom: 3%;
 }
 .CadastrarButton button:hover{
     background-color: #5fc2b0;
@@ -81,6 +82,8 @@
         font-size: 1.5em;
         padding-left: 10%;
         padding-right: 10%;
+        text-align: center;
+        padding-top: 3%;
     }
     .descricaoC{
         width: 15em;

@@ -68,7 +68,7 @@ function Cadastro(){
                         <Dropdown.Item as="button">Enfermeiro</Dropdown.Item>
 
                     </DropdownButton>
-                    <p className="cadastre2"> Faça uma descrição sobre voce! (Pontos fortes, anos de experiência, etc) :</p>
+                    <p className="cadastre2"> Faça uma descrição sobre você! (Pontos fortes, anos de experiência, etc) :</p>
                     <textarea className="descricaoC"> </textarea>
 
                     <div className="CadastrarButton">

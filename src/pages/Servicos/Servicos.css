@@ -91,6 +91,8 @@
         padding-top: 25px;
         padding-bottom: 0px;
         padding-left: 0px;
+        text-align: center;
+        width: 100%
         
     }
     .trabalhos{
@@ -99,8 +101,8 @@
         padding-right: 0px;
     }
     .textS{
-        padding-left: 120px;
-        padding-right: 120px;
+        padding-left: 7%;
+        padding-right: 7%;
         font-size:3em;
         width:100%;
     }
@@ -130,9 +132,9 @@
         padding-right: 0px;
     }
     .textS{
-        padding-left: 120px;
-        padding-right: 120px;
-        font-size: 2em;
+        padding-left: 7%;
+        padding-right: 7%;
+        font-size: 1.8em;
         width:100%;
     }
     .emprego{
@@ -166,9 +168,9 @@
         padding-right: 0px;
     }
     .textS{
-        padding-left: 120px;
-        padding-right: 120px;
-        font-size: 1.3em;
+        padding-left: 7%;
+        padding-right: 7%;
+        font-size: 1.2em;
         width:100%;
     }
     .emprego{
@@ -201,8 +203,8 @@
         padding-right: 0px;
     }
     .textS{
-        padding-left: 10%;
-        padding-right: 10%;
+        padding-left: 7%;
+        padding-right: 7%;
         font-size: 1.2em;
         width:100%;
     }

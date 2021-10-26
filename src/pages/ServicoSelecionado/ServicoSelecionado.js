@@ -106,24 +106,24 @@ function ServicoSelecionado() {
         </div>
         <div className="Comentarios1">
             <div className="C1">
-                <p>" <br/><br/><br/><br/><br/> "</p>
+                <p>" <br/><br/><br/><br/> "</p>
             </div>
             <div className="C1">
-                <p>" <br/><br/><br/><br/><br/> "</p>
+                <p>" <br/><br/><br/><br/> "</p>
             </div>
             <div className="C1">
-                <p>" <br/><br/><br/><br/><br/> "</p>
+                <p>" <br/><br/><br/><br/> "</p>
             </div>
         </div>
         <div className="Comentarios1">
             <div className="C2">
-                <p>" <br/><br/><br/><br/><br/> "</p>
+                <p>" <br/><br/><br/><br/> "</p>
             </div>
             <div className="C2">
-                <p>" <br/><br/><br/><br/><br/> "</p>
+                <p>" <br/><br/><br/><br/> "</p>
             </div>
             <div className="C2">
-                <p>" <br/><br/><br/><br/><br/> "</p>
+                <p>" <br/><br/><br/><br/> "</p>
             </div>
         </div>
       </div>

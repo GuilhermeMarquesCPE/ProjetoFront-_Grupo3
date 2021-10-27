@@ -19,7 +19,7 @@ function Login() {
      <div className="baseL">
        <Navbar/>
         <div className="containerL">
-               <img src="/images/image.png" alt="Entre"/>
+               <img className="imagemL" src="/images/image.png" alt="Entre"/>
                <Form className="inputsL">
                 <Form.Group className="mb-3" controlId="Email">
                 <br/>

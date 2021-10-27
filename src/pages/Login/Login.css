@@ -15,14 +15,18 @@
     vertical-align: middle;
     background-image: url("./brancobackground.jpg");
 }
+.imagemL{
+    width:30%;
+}
 
 .inputsL{
     display: flex;
     flex-direction: column;
+    justify-content: center;
     margin-left: 16px;
     margin-right: 16px;
     vertical-align: middle;
-    width: 40%;
+    width: 30%;
 }
 
 .LoginButton{
@@ -53,3 +57,43 @@
 }
 
 
+@media (max-width:500px){
+    .containerL{
+        padding:2em;
+    }
+    .imagemL{
+        width: 13em;
+    }
+    .novoL{
+        flex-direction: column;
+    }
+    .inputsL{
+        width:10em;
+    }
+}
+
+@media (max-width:1000px) and (min-width:500px){
+    .containerL{
+        padding:2em;
+    }
+    .imagemL{
+        width:20em;
+    }
+    .novoL{
+        flex-direction: column;
+    }
+    .inputsL{
+        width:13em;
+    }
+    .CadastroLink{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (max-width:1300px) and (min-width:1000px){
+    .imagemL{
+        width:20em;
+    }
+    
+}

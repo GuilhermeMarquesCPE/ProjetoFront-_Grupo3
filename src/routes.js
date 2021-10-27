@@ -11,6 +11,7 @@ import Navbar from "./Components/Navbar";
 import Footer from "./Components/Footer";
 import ServicoSelecionado from "./pages/ServicoSelecionado";
 import AlterarDados from "./pages/AlterarDados";
+import TemporaryDrawer from "./Components/TemporaryDrawer";
 
 
 function Routes(){
@@ -26,6 +27,7 @@ function Routes(){
                 <Route exact path="/footer" component={Footer} />
                 <Route exact path="/alterardados" component={AlterarDados} />
                 <Route exact path="/servicoselecionado" component={ServicoSelecionado} />
+                <Route exact path="/temporarydrawer" component={TemporaryDrawer}/>
                 <Route path="/">
                     <Home/>
                 </Route>

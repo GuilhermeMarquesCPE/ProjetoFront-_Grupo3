@@ -2,22 +2,113 @@
     display: flex;
     background-color: #CBF3F0;
     justify-content: space-between;
+    align-items: center;
+    padding-right: 11%;
 }
-.navbar {
-    margin-right: 9em;
+.navbar{
+    overflow: hidden;
 }
 .navbarLink {
-    font-size: 1.2em;
+    font-size: 1.7em;
     padding: 15px;
     text-decoration: none;
     color: black;
 }
-.navbarLink:hover{
+.buttonNavbar{
+    font-size:2em;
+    display: none;
+    width: 1.2em;
+    height: 1.2em;
+}
+.iconNavbar{
+    display: flex;
+    padding: 1em;
+}
+
+.navbarLink:hover, .buttonNavbar:hover{
     background-color: black;
     color: #CBF3F0;
 }
 .logoN{
-    width:25%;
+    max-width:65%;
     padding: 1%;
     margin-left: 11%;
 }
+.LogoButton {
+    width: 40%;
+}
+
+@media (max-width: 780px)  {
+    .cabecalhoN {
+        display: flex;
+        flex-direction: column;
+        padding-right:5%;
+    }
+    .navbar {
+        display: none;
+        height: 0;
+        width: 0;
+    }
+    .logoN{
+        max-width: 75%;
+        margin-left: 5%;
+    }
+    .buttonNavbar{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .LogoButton{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 75%;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 1050px) and (min-width:780px){
+    .cabecalhoN {
+        display: flex;
+        flex-direction: column;
+        padding-right:5%;
+    }
+    .navbar {
+        display: none;
+        height: 0;
+        width: 0;
+    }
+    .logoN{
+        max-width: 60%;
+        margin-left: 3%;
+    }
+    .buttonNavbar{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .LogoButton{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 75%;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 1351px) and (min-width:1050px) {
+    .navbarLink{
+        font-size: 1.4em;
+    }
+    .navbar{
+        width: 70%; 
+    }
+    .LogoButton{
+        width:61%;
+    }
+}
+
+
+
+
+

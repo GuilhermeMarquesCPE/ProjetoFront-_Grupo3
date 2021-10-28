@@ -16,10 +16,12 @@
     margin-right: 25%;
     border-radius: 1em;
     margin-top: 3%;
+
 }
 .description {
     font-family: 'Fira Sans', sans-serif;
     font-weight: 400;
+    margin-bottom: 0;
     font-size: 200%;
 }
 
@@ -134,6 +136,8 @@
 
 
 
+
+
 .tudoComentarios {
     display: flex;
     flex-direction: column;
@@ -165,12 +169,11 @@
 
 .textoConteAqui {
     background-color: #5FC2B0;
-    width: 50%;
     border-radius: 4em;
-    height: 50%;
     border-color: black;
     border-style: solid;
     padding-left: 1%;
+    width:90%
 }
 
 .Comentarios1 {
@@ -182,8 +185,23 @@
     margin-bottom: 3%;
 
 }
+.barraIcon{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
 
 .C1 {
+    display: flex;
+    word-break: break-word;
+    border-style: solid;
+    width:20%;
+    height: 50%;
+    border-radius: 0.5em;
+}
+.C2 {
     display: flex;
     word-break: break-word;
     border-style: solid;
@@ -198,5 +216,272 @@
     justify-content: center;
 }
 
+@media (max-width: 480px){
+    .MuiAvatar-root.MuiAvatar-circular.MuiAvatar-colorDefault.avatar.css-1bcs78w-MuiAvatar-root{
+        width: 10%;
+        height: 0.3%;
+        font-size: 30%;
+       display: none;
+    }
+    .MuiAvatar-root.MuiAvatar-circular.MuiAvatar-colorDefault.avatar.css-mc60rc-MuiAvatar-root{
+        width: 25%;
+        height: 0.3%;
+        font-size: 70%;
+        display:none;
+    }
+    .MuiAvatar-root.MuiAvatar-circular.MuiAvatar-colorDefault.avatar.css-1ojdjkj-MuiAvatar-root{
+        width: 25%;
+        height: 0.3%;
+        font-size: 70%;
+        display:none;
+    }
+    .MuiAvatar-root.MuiAvatar-circular.MuiAvatar-colorDefault.avatar.css-1w9ehgg-MuiAvatar-root{
+        width: 25%;
+        height: 0.3%;
+        font-size: 70%;
+        display:none;
+    }
+    .btn.btn-outline-dark{
+        margin-bottom: 3%;
+    }
+    .perfilAzul{
+        padding:0;
+    }
+    .perfilClaro{
+        padding:0;
+    }
+    .perfilLaranja{
+        padding:0;
+    }
+    .perfilLaranjaClaro{
+        padding:0;
+    }
+    .caixa1{
+        width:100%;
+        flex-direction: column;
+    }
+    .caixa2{
+        width:100%;
+        flex-direction: column;
+    }
+    .caixa3{
+        width:100%;
+        flex-direction: column;
+    }
+    .caixa4{
+        width:100%;
+        flex-direction: column;
+    }
+    .barraConteAqui{
+        flex-direction: column;
+    }
+    .barraIcon{
+        width: 86%;
+        align-items: center;
+    }
+    .textoConteAqui{
+        width: 90%;
+    }
+    .perguntaSS{
+        text-align: center;
+    }
+    .Comentarios1{
+        flex-direction: column;
+        align-items: center;
+    }
+    .C1{
+        width:100%;
+        margin-bottom: 10%;
+    }
+    .C2{
+        display: none;
+    }
+    .description{
+        font-size: 150%;
+    }
+    .especificacoes{
+        margin-right: 11%;
+        margin-left: 11%;
+    }
+}
 
+@media (max-width: 600px) and (min-width:480px){
+    .MuiAvatar-root.MuiAvatar-circular.MuiAvatar-colorDefault.avatar.css-1bcs78w-MuiAvatar-root{
+        width: 15%;
+        height: 80%;
+        font-size: 60%;
+    }
+    .MuiAvatar-root.MuiAvatar-circular.MuiAvatar-colorDefault.avatar.css-mc60rc-MuiAvatar-root{
+        width: 15%;
+        height: 80%;
+        font-size: 60%;
+    }
+    .MuiAvatar-root.MuiAvatar-circular.MuiAvatar-colorDefault.avatar.css-1ojdjkj-MuiAvatar-root{
+        width: 15%;
+        height: 80%;
+        font-size: 60%;
+    }
+    .MuiAvatar-root.MuiAvatar-circular.MuiAvatar-colorDefault.avatar.css-1w9ehgg-MuiAvatar-root{
+        width: 15%;
+        height: 80%;
+        font-size: 60%;
+    }
+    .btn.btn-outline-dark{
+        margin-bottom: 3%;
+    }
+    .caixa1{
+        width:90%;
+        flex-direction: column;
+    }
+    .caixa2{
+        width:90%;
+        flex-direction: column;
+    }
+    .caixa3{
+        width:90%;
+        flex-direction: column;
+    }
+    .caixa4{
+        width:90%;
+        flex-direction: column;
+    }
+    .barraConteAqui{
+        flex-direction: column;
+    }
+    .barraIcon{
+        width: 86%;
+        align-items: center;
+    }
+    .textoConteAqui{
+        width: 90%;
+    }
+    .perguntaSS{
+        text-align: center;
+    }
+    .Comentarios1{
+        flex-direction: column;
+        align-items: center;
+    }
+    .C1{
+        width:100%;
+        margin-bottom: 10%;
+    }
+    .C2{
+        display: none;
+    }
+    .description{
+        font-size: 150%;
+    }
+    .especificacoes{
+        margin-right: 11%;
+        margin-left: 11%;
+    }
+}
 
+@media (max-width: 756px) and (min-width:600px){
+    .MuiAvatar-root.MuiAvatar-circular.MuiAvatar-colorDefault.avatar.css-1bcs78w-MuiAvatar-root{
+        width: 15%;
+        height: 100%;
+        font-size: 80%;
+    }
+    .MuiAvatar-root.MuiAvatar-circular.MuiAvatar-colorDefault.avatar.css-mc60rc-MuiAvatar-root{
+        width: 15%;
+        height: 100%;
+        font-size: 80%;
+    }
+    .MuiAvatar-root.MuiAvatar-circular.MuiAvatar-colorDefault.avatar.css-1ojdjkj-MuiAvatar-root{
+        width: 15%;
+        height: 100%;
+        font-size: 80%;
+    }
+    .MuiAvatar-root.MuiAvatar-circular.MuiAvatar-colorDefault.avatar.css-1w9ehgg-MuiAvatar-root{
+        width: 15%;
+        height: 100%;
+        font-size: 80%;
+    }
+    .btn.btn-outline-dark{
+        margin-bottom: 3%;
+    }
+    .caixa1{
+        width:90%;
+        flex-direction: column;
+    }
+    .caixa2{
+        width:90%;
+        flex-direction: column;
+    }
+    .caixa3{
+        width:90%;
+        flex-direction: column;
+    }
+    .caixa4{
+        width:90%;
+        flex-direction: column;
+    }
+    .barraConteAqui{
+        flex-direction: column;
+    }
+    .barraIcon{
+        width: 86%;
+        align-items: center;
+    }
+    .textoConteAqui{
+        width: 90%;
+    }
+    .perguntaSS{
+        text-align: center;
+    }
+    .Comentarios1{
+        margin-left:0;
+    }
+    .C2{
+        width:100%;
+        margin-left: 10%;
+    }
+    .C1{
+        width:100%;
+        margin-left: 10%;
+    }
+    .description{
+        font-size: 150%;
+    }
+    .especificacoes{
+        margin-right: 11%;
+        margin-left: 11%;
+    }
+}
+
+@media (max-width: 1000px) and (min-width:756px){
+    
+    .barraConteAqui{
+        flex-direction: column;
+    }
+    .barraIcon{
+        width: 86%;
+        align-items: center;
+    }
+    .textoConteAqui{
+        width: 90%;
+    }
+    .perguntaSS{
+        text-align: center;
+    }
+    .Comentarios1{
+        margin-left:0;
+    }
+    .C2{
+        width:100%;
+        margin-left: 10%;
+    }
+    .C1{
+        width:100%;
+        margin-left: 10%;
+    }
+    .description{
+        font-size: 150%;
+    }
+    .especificacoes{
+        margin-right: 11%;
+        margin-left: 11%;
+    }
+}

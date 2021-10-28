@@ -9,6 +9,8 @@
 .cadastreAD{
     font-size: 2.5em;
     font-family: 'Fira Sans';
+    padding:0.5em;
+    padding-bottom: 0em;
 }
 
 .containerAD{
@@ -30,7 +32,11 @@
 }
 .CadastrarButtonAD{
     padding-top: 1em;
+    display:flex;
+    align-items: center;
 }
+    
+
 .CadastrarButtonAD button:hover{
     background-color: #5fc2b0;
     border-color: #5fc2b0;
@@ -47,10 +53,18 @@
     font-size: 1em;
     font-family: 'Fira Sans';
 }
+.btn-outline-dark {
+    margin-bottom: 1em;
+    margin-left:0.5em;
+    margin-right:0.5em;
+    
+}
 
-@media (max-width:350px){
+
+@media (max-width:330px){
     .cadastreAD {
-        padding:2em;
+        padding:1em;
+        padding-bottom: 0em;
         font-size: 1.8em;
     }
     .inputsAD{
@@ -60,11 +74,16 @@
         font-size: 0.7em;
         margin-left: 15px;
     }
+    .descricaoAD {
+        width: 90%;
+    }
 }
 
-@media (max-width:600px) and (min-width:350px) {
+@media (max-width:600px) and (min-width:330px) {
     .cadastreAD {
-        padding:2em;
+        font-size: 2em;
+        padding:1em;
+        padding-bottom:0em;
         font-size: 1.8em;
     }
     .inputsAD{
@@ -74,5 +93,8 @@
     .cadastre2AD{
         font-size: 0.8em;
         margin-left: 10px;
+    }
+    .descricaoAD {
+        width: 20em;
     }
 }

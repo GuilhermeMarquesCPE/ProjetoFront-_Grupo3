@@ -289,7 +289,8 @@
 @media screen and (max-width:300px){
     .notasH{
         display: flex;
-        flex-direction: column;   
+        flex-direction: column;
+        width: 70%;
     }
     .missao{
         width: 110%;
@@ -325,18 +326,20 @@
 @media screen and (max-width:500px) and (min-width:300px){
     .notasH{
         display: flex;
-        flex-direction: column;   
+        flex-direction: column;
+        width: 80%;
+        align-items:center;
     }
     .missao{
-        width: 100%;
+        width: 20em;
         margin-bottom: 10%;
     }
     .visao{
-        width: 100%;
+        width: 20em;
         margin-bottom: 10%;
     }
     .valores{
-        width: 100%;
+        width: 20em;
     }
 
 }
@@ -345,18 +348,20 @@
     .notasH{
         display: flex;
         flex-direction: column;
-        justify-content: center;   
+        justify-content: center;
+        align-items: center;
+        width:80%; 
     }
     .missao{
-        width: 100%;
+        width: 20em;
         margin-bottom: 10%;
     }
     .visao{
-        width: 100%;
+        width: 20em;
         margin-bottom: 10%;
     }
     .valores{
-        width: 100%;
+        width:20em;
     }
 
 }
@@ -390,15 +395,15 @@
 
 @media screen and (max-width:1024px) and (min-width:768px){
     .missao{
-        width: 110%;
+        width: 100%;
         margin-right: 2%;
     }
     .visao{
-        width: 110%;
+        width: 100%;
         margin-right: 2%;
     }
     .valores{
-        width: 110%;
+        width: 100%;
     }
     .notasH{
         margin-left: 5% ;
@@ -438,11 +443,13 @@
         display: none;
     }
     .textoHist{
-        font-size: 80%;  
+        font-size: 100%;  
         text-align: center;
         font-weight: 500;
         margin-right: 0%;
+        width:20em;
     }
+    
 }
 
 @media screen and (max-width:480px) and (min-width:300px) {
@@ -450,7 +457,7 @@
         display: none;
     }
     .textoHist{
-        font-size: 100%;  
+        font-size: 100%;   
         text-align: center;
         font-weight: 500;
         margin-right: 0%;
@@ -462,26 +469,28 @@
         display: none;
     }
     .textoHist{
-        font-size: 120%;  
+        font-size: 1.4em;  
         text-align: center;
         font-weight: 500;
         margin-right: 0%;
     }
 }
 
-@media screen and (max-width:768px) and (min-width:600px) {
+@media screen and (max-width:767px) and (min-width:600px) {
     .desenhoH{
         display: none;
     }
     .textoHist{
-        font-size: 150%;  
+        font-size: 1.6em;  
         text-align: center;
         font-weight: 500;
         margin-right: 0%;
+        display:flex;
+        align-items:center;
     }
 }
 
-@media screen and (max-width:1024px) and (min-width:768px) {
+@media screen and (max-width:1024px) and (min-width:767px) {
     .desenhoH{
         width: 45%;
         height: 50%;

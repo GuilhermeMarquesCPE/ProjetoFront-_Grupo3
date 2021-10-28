@@ -9,7 +9,10 @@ import Footer from "../../Components/Footer";
 function AlterarDados(){
     
     function cadastro(){
-        history.push("login");
+        history.push("perfil");
+    }
+    function cancelar(){
+        history.push("perfil")
     }
 
     const [email, setEmail] = useState();
@@ -61,6 +64,7 @@ function AlterarDados(){
                     <textarea className="descricaoAD"> </textarea>
 
                     <div className="CadastrarButtonAD">
+                        <Button variant="outline-dark" onClick={cancelar}>Cancelar</Button>
                         <Button variant="outline-dark" onClick={cadastro}>Salvar alterações</Button>
                     </div>  
             </div>

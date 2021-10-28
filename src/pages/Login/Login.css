@@ -3,7 +3,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 10em;
+    padding: 13.5em;
 
 }
 
@@ -59,7 +59,7 @@
 
 @media (max-width:500px){
     .containerL{
-        padding:2em;
+        padding:8em;
     }
     .imagemL{
         width: 13em;
@@ -73,9 +73,6 @@
 }
 
 @media (max-width:1000px) and (min-width:500px){
-    .containerL{
-        padding:2em;
-    }
     .imagemL{
         width:20em;
     }

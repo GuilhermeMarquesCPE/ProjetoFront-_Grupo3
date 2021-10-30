@@ -17,7 +17,7 @@ function Servicos(){
                 <input class="form-control me-2" type="search" placeholder="Pesquisar por profissional" className="pesquisa"></input>
                     <div className="searchButton">
                         <button class="btn btn-outline-success btn-sm" type="button">
-                             <BiSearchAlt className="iconservicos"/>Buscar
+                             <BiSearchAlt className="iconservicos"/><p className="buscarS">Buscar</p>
                         </button>
                     </div>
             </form>

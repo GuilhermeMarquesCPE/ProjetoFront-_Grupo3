@@ -20,6 +20,10 @@
     font-size: 4em;
 
 }
+.buscarS{
+    margin-bottom: 0;
+    display:flex;
+}
 
 .textoS{
     padding-top: 5em;
@@ -48,6 +52,7 @@
     justify-content: center;
     padding: 1em;
     width: 100%;
+    align-items: center;
 }
 .pesquisa {
     display: flex;
@@ -67,6 +72,11 @@
 .btn.btn-outline-success.btn-sm {
     display: flex;
     border-radius: 50px;
+    height: 3em;
+    justify-content: center;
+    align-items: center;
+    width: 8em;
+    flex-direction: row;
 }
 .searchButton {
     margin-left: 1%;
@@ -111,6 +121,7 @@
 
 
 @media (max-width : 650px) {
+
     .conteudoS {
         display: flex;
         flex-direction: column;
@@ -147,6 +158,7 @@
 
 
 @media (max-width : 500px) {
+    
     .conteudoS {
         display: flex;
         flex-direction: column;
@@ -179,9 +191,16 @@
         width: 60%;
         margin: .7em;
     }
+    .buscarS{
+        display: none;
+    }
+    .btn.btn-outline-success.btn-sm {
+
+        width: 3.5em;
+    }
 }
 
-@media (max-width : 320px) {
+@media (max-width : 420px) {
     .conteudoS {
         display: flex;
         flex-direction: column;
@@ -219,7 +238,21 @@
         font-size: .55rem !important;
         border-radius: .2rem;
     }
+    .btn.btn-outline-success.btn-sm {
+        height: 2.3em;
+        width: 3em;
+    }
     .btn {
         font-size: .8rem !important;
+    }
+    .pesquisa{
+        height: 4.3vh;
+        width:60%;
+    }
+    .buscarS{
+        display:none;
+    }
+    .barraBusca{
+        width:100%;
     }
 }

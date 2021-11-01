@@ -54,8 +54,14 @@
 }
 
 .informacoesP{
+    
     padding-top: 1em;
-    line-height: 0.5em;
+    line-height: 1em;
+}
+.informacoesP p{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
 }
 
 .dadosPerfil {
@@ -102,5 +108,14 @@
     .lineP p {
         max-width: 90%;
         
+    }
+    .fraseP {
+        margin-right: 45%;
+    }
+    .informacoesP p{
+        display:flex;
+        flex-direction:column;
+        
+        align-items:center;
     }
 }

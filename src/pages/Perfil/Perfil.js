@@ -11,13 +11,13 @@ function Perfil() {
     <div className="baseP">
       <Navbar />
       <div className="profile">
-        <h2 className="fraseP">Bem Vindo, </h2>
+        <h2 className="fraseP">Bem Vindo! </h2>
         <Avatar sx={{ width: 150, height: 150, bgcolor: "#fabe36" }}>
           <h1 className="iconeP">N</h1>
         </Avatar>
         <div className="informacoesP">
-          <p> Nome: Matheus Profissional</p>
-          <p> Email: matheusprofissional@gmail.com</p>
+          <p> Nome: &nbsp;<div>Matheus Profissional</div></p>
+          <p> Email: &nbsp;<div>matheusprofissional@gmail.com</div></p>
         </div>
         <div className="change">
         <Link to="alterardados" className="ChangeData"> Alterar dados </Link>

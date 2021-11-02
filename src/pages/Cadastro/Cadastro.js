@@ -1,25 +1,69 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./cadastro.css";
 import { Form, Button, Dropdown, DropdownButton } from "react-bootstrap";
-import { useHistory, Link } from "react-router-dom"; 
+import { useHistory } from "react-router-dom"; 
 import Navbar from "../../Components/Navbar";
 import Footer from "../../Components/Footer";
 
+import api from "../../services/api";
+
 
 function Cadastro(){
-    
-    function cadastro(){
-        history.push("login");
-    }
-
     const [email, setEmail] = useState();
-    const [password, setPassword] = useState();
+    const [senha, setSenha] = useState();
     const history = useHistory();
     const [Nome, setNome] = useState();
-    const [ConfirmPassword, setConfirmPassword] = useState();
+    const [ConfirmSenha, setConfirmSenha] = useState();
     const [celular, setCelular] = useState();
     const [Cidade, setCidade] = useState();
     const [Estado, setEstado] = useState();
+    const [descricaoo, setDescricaoo] = useState();
+    const [trabalho, setTrabalho] = useState();
+    const [elementos, setElementos] = useState([]);
+    useEffect(async() => {
+        const tipos = await api.get('/servico/tipos');
+        const auxTipos = [];
+        tipos.data.forEach((response) => {
+            auxTipos.push({label:response.nome, value:response.servico_id});
+        });
+        
+        setElementos(auxTipos);
+        
+    },[]);
+    
+    const profissional = 
+        {
+            profissional_servico_id: trabalho,
+            nome: Nome,
+            email: email,
+            estado: Estado,
+            cidade: Cidade,
+            descricao: descricaoo,
+            senha: senha,
+            confirmarSenha: ConfirmSenha,
+            contato: celular,
+        };
+    
+    
+    
+    
+    async function handleCadastro(e) {
+        e.preventDefault();
+        try {
+            console.log(trabalho);
+            console.log(profissional);
+          const response = await api.post('/profissional', profissional);
+          
+          history.push("/login");
+        } catch (error) {
+          if(error.response.status === 403){
+            alert("Credenciais invalidas!");
+          }
+          else {
+            alert(error.response.data.notification);
+          }
+        }
+      }
 
     return (
         <div className="cadastro">
@@ -45,34 +89,30 @@ function Cadastro(){
                             <Form.Control type="Cidade" placeholder="Cidade" onChange={(e) => setCidade(e.target.value)} />
                         </Form.Group>
                         <Form.Group className="mb-3" controlId="senha">
-                            <Form.Control type="password" placeholder="Senha" onChange={(e) => setPassword(e.target.value)} />
+                            <Form.Control type="password" placeholder="Senha" onChange={(e) => setSenha(e.target.value)} />
                         </Form.Group>
                         <Form.Group className="mb-3" controlId="ConfirmPass">
-                            <Form.Control type="password" placeholder="Confirmar senha" onChange={(e) => setConfirmPassword(e.target.value)} />
+                            <Form.Control type="password" placeholder="Confirmar senha" onChange={(e) => setConfirmSenha(e.target.value)} />
                         </Form.Group>
-                    </Form>
+                    
+
+                    <select class="form-control" aria-label="Default select example" onChange={(e) => setTrabalho(e.target.value)}>
+                        <option >Escolha um trabalho oferecido</option>
+
+                        {elementos.map((item) => (
+                            
+                            <option value={item.value}>{item.label}</option>
+    
+                        ))};
+                    
+                        </select>
+                        </Form>
                     </div>
-
-                    <DropdownButton className="dropButton" title="Trabalhos oferecidos" >
-                        <Dropdown.Item as="button">Pintor</Dropdown.Item>
-                        <Dropdown.Item as="button">Professor Particular</Dropdown.Item>
-                        <Dropdown.Item as="button">Engenheiro</Dropdown.Item>
-                        <Dropdown.Item as="button">Fotógrafo</Dropdown.Item>
-                        <Dropdown.Item as="button">Cozinheiro</Dropdown.Item>
-                        <Dropdown.Item as="button">Programador</Dropdown.Item>
-                        <Dropdown.Item as="button">Babá</Dropdown.Item>
-                        <Dropdown.Item as="button">Encanador</Dropdown.Item>
-                        <Dropdown.Item as="button">Cuidador de Pets</Dropdown.Item>
-                        <Dropdown.Item as="button">Editor de Video</Dropdown.Item>
-                        <Dropdown.Item as="button">Costureiro</Dropdown.Item>
-                        <Dropdown.Item as="button">Enfermeiro</Dropdown.Item>
-
-                    </DropdownButton>
                     <p className="cadastre2"> Faça uma descrição sobre você! (Pontos fortes, anos de experiência, etc) :</p>
-                    <textarea className="descricaoC"> </textarea>
+                    <textarea className="descricaoC" onChange={(e) => setDescricaoo(e.target.value)}> </textarea>
 
                     <div className="CadastrarButton">
-                        <Button variant="outline-dark" onClick={cadastro}>Cadastrar</Button>
+                        <Button variant="outline-dark" onClick={handleCadastro}>Cadastrar</Button>
                     </div>  
             </div>
             <Footer/>

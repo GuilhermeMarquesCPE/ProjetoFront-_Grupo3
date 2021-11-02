@@ -12,7 +12,22 @@ import Footer from "./Components/Footer";
 import ServicoSelecionado from "./pages/ServicoSelecionado";
 import AlterarDados from "./pages/AlterarDados";
 import TemporaryDrawer from "./Components/TemporaryDrawer";
+import { isAuthenticated } from "./services/auth";
 
+const PrivateRoute = ({ component: Component, ...rest}) => (
+    <Route
+      {...rest}
+      render={(props) =>
+        isAuthenticated() ? (
+            <Component {...props} />
+        ) : (
+            <Redirect
+               to={{ pathname: "/login", state:{from: props.location}}}
+            />
+        )
+    }
+    />
+);
 
 function Routes(){
     return(
@@ -25,7 +40,7 @@ function Routes(){
                 <Route exact path="/temp" component={Menu} />
                 <Route exact path="/navbar" component={Navbar} />
                 <Route exact path="/footer" component={Footer} />
-                <Route exact path="/alterardados" component={AlterarDados} />
+                <PrivateRoute path="/alterardados" component={AlterarDados} />
                 <Route exact path="/servicoselecionado" component={ServicoSelecionado} />
                 <Route exact path="/temporarydrawer" component={TemporaryDrawer}/>
                 <Route path="/">
@@ -33,7 +48,8 @@ function Routes(){
                 </Route>
             </Switch>
         </BrowserRouter>
-    )    
+    );  
 }
+
 
 export default Routes;

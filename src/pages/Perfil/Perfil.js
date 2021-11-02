@@ -7,17 +7,29 @@ import { Link } from "react-router-dom";
 import { MdLocationCity, MdLocationPin, MdWork, MdEditNote, MdCall, MdPerson} from "react-icons/md";
 
 function Perfil() {
+
+  const usuarioPerfil = {
+    nome: "Laura Pires",
+    email: "laurapires@gmail.com",
+    estado: "Minas Gerais",
+    servico: "Babá",
+    cidade: "Belo Horizonte",
+    descricao: "Atuo há nos na profissão",
+    contato: "99999-9999"
+
+  }
+
   return (
     <div className="baseP">
       <Navbar />
       <div className="profile">
         <h2 className="fraseP">Bem Vindo! </h2>
         <Avatar sx={{ width: 150, height: 150, bgcolor: "#fabe36" }}>
-          <h1 className="iconeP">N</h1>
+          <h1 className="iconeP">{usuarioPerfil.nome[0]}</h1>
         </Avatar>
         <div className="informacoesP">
-          <p> Nome: &nbsp;<div>Matheus Profissional</div></p>
-          <p> Email: &nbsp;<div>matheusprofissional@gmail.com</div></p>
+          <p> Nome: &nbsp;<div> {usuarioPerfil.nome} </div></p>
+          <p> Email: &nbsp;<div>{usuarioPerfil.email}</div></p>
         </div>
         <div className="change">
         <Link to="alterardados" className="ChangeData"> Alterar dados </Link>
@@ -27,27 +39,27 @@ function Perfil() {
         <div className="dadosPerfil">
           <div className="lineP">
             <MdPerson className="iconperfil" />
-            <p>Nome: <div>Matheus Portela Carvalho Bastos</div></p>
+            <p>Nome: <div>{usuarioPerfil.nome}</div></p>
           </div> 
           <div className="lineP">
             <MdLocationPin className="iconperfil" />
-            <p>Estado: <div>Minas Gerais</div> </p>
+            <p>Estado: <div>{usuarioPerfil.estado}</div> </p>
           </div> 
           <div className="lineP">
             <MdLocationCity className="iconperfil" />
-            <p>Cidade: <div>Lavras</div> </p> 
+            <p>Cidade: <div>{usuarioPerfil.cidade}</div> </p> 
           </div>
           <div className="lineP">
             <MdWork className="iconperfil" />
-            <p>Tipo de Serviço: <div>Engenheiro</div> </p>
+            <p>Tipo de Serviço: <div>{usuarioPerfil.servico}</div> </p>
           </div>
           <div className="lineP">
             <MdEditNote className="iconperfil" />
-            <p>Descrição: <div className="descricaop">Engenheiro recem formado, cursei engenharia de controle e automaçao na ufmg e blablablablablalablablablabla</div></p>
+            <p>Descrição: <div className="descricaop">{usuarioPerfil.descricao}</div></p>
           </div>
           <div className="lineP">
             <MdCall className="iconperfil" />
-            <p>Contato: <div>99 99999-9999</div></p>
+            <p>Contato: <div>{usuarioPerfil.contato}</div></p>
           </div>
       </div>
       <Footer />

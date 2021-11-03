@@ -18,6 +18,7 @@ function ServicoSelecionado() {
 
   const[profissionais, setProfissionais] = useState([]);
   const[servico, setServico] = useState([]);
+  const[comentarios, setComentarios] = useState([]);
 
   useEffect(async() => {
 
@@ -33,29 +34,36 @@ function ServicoSelecionado() {
      
   },[]);
 
+  useEffect(async() => {
+    
+    const resposta = await api.get(`/comentario/${servicoID}`);
+    setComentarios(resposta.data);
+     
+  },[]);
+
 
   
-  const comentariosSS = [
-    {
-      comentario:"Muito bom o servico"
-    },
-    {
-      comentario:"Muito bom o servico"
-    },
-    {
-      comentario:"Muito bom o servico"
-    },
+  // const comentariosSS = [
+  //   {
+  //     comentario:"Muito bom o servico"
+  //   },
+  //   {
+  //     comentario:"Muito bom o servico"
+  //   },
+  //   {
+  //     comentario:"Muito bom o servico"
+  //   },
  
-     {
-       comentario:"Muito bom o servico"
-     },
-     {
-       comentario:"Muito bom o servico"
-     },
-    {
-      comentario:"Muito bom o servico"
-    }
-  ]
+  //    {
+  //      comentario:"Muito bom o servico"
+  //    },
+  //    {
+  //      comentario:"Muito bom o servico"
+  //    },
+  //   {
+  //     comentario:"Muito bom o servico"
+  //   }
+  // ]
 
   return (
     <div className="baseSS">
@@ -94,11 +102,13 @@ function ServicoSelecionado() {
         </div>
          
         <div className="Comentarios1">
-        {comentariosSS.map((element, index) => (
+        {comentarios.map((element) => (
             <>
-            <Comentarioprop key={comentariosSS.id} comentariosSS={element} />
+            <Comentarioprop key={comentarios.id} comentariosSS={element} />
              <br/>
+             
             </>
+            
           ))}
         
             

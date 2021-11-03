@@ -10,7 +10,7 @@ import api from "../../services/api";
 function AlterarDados(){
     
     function cancelar(){
-        history.push("perfil");
+        history.push("home");
     }
 
     const [descricaoo, setDescricaoo] = useState();
@@ -51,7 +51,7 @@ function AlterarDados(){
         e.preventDefault();
         try {
             const response = await api.put(`/profissionalUpdate/${userId}`, profissional);
-            history.push("/perfil");
+            history.push("/home");
         } catch (error) {
           if(error.response.status === 403){
             alert("Credenciais invalidas!");

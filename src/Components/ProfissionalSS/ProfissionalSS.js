@@ -6,6 +6,8 @@ import { Avatar } from "@material-ui/core";
 function Profissionalprop({profissionalSS}){
     console.log(profissionalSS);
     return (
+    <div className="profissionais">
+        <br/>
     <div className="perfilLaranja">
         {/* <p className="dadosSSprop">
             <div className="nomeprossional">{profissionalSS.nome}</div>
@@ -13,13 +15,13 @@ function Profissionalprop({profissionalSS}){
             <div className="cidadeprossional">{profissionalSS.cidade}</div>
 
         </p> */}
-        <div className="perfilLaranja">
+        {/* <div className="perfilLaranja"> */}
           
 
           <Avatar className="avatar"
             sx={{ width: 150, height: 150, bgcolor: "#FFBF69", marginRight: 3 }}
           >
-            <h1 className="iconeSS">G</h1>
+            <h1 className="iconeSS">{profissionalSS.nome[0]}</h1>
           </Avatar>
         <div className="caixa1">
 
@@ -35,8 +37,10 @@ function Profissionalprop({profissionalSS}){
             <Button variant="outline-dark">Ver mais</Button>{" "}
           
           </div>
-          </div>
+          {/* </div> */}
     </div>
+    </div>
+    
     );
 }
 

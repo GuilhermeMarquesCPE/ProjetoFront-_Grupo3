@@ -8,6 +8,7 @@ import { BiSend } from "react-icons/bi";
 import { getListItemAvatarUtilityClass } from "@mui/material";
 
 import Profissionalprop from "../../Components/ProfissionalSS/ProfissionalSS";
+import Comentarioprop from "../../Components/ComentarioSS/ComentarioSS";
 
 function ServicoSelecionado() {
 
@@ -34,6 +35,28 @@ function ServicoSelecionado() {
     }
   ]
 
+  const comentariosSS = [
+    {
+      comentario:"Muito bom o servico"
+    },
+    {
+      comentario:"Muito bom o servico"
+    },
+    {
+      comentario:"Muito bom o servico"
+    }
+  ]
+    // {
+    //   comentario:"Muito bom o servico"
+    // },
+    // {
+    //   comentario:"Muito bom o servico"
+    // },
+    // {
+    //   comentario:"Muito bom o servico"
+    // }
+  
+
   return (
     <div className="baseSS">
       <Navbar />
@@ -46,89 +69,16 @@ function ServicoSelecionado() {
       <br />
       <div className="profissionais">
       
-        <div className="perfilLaranja">
+        <div >
           
-
-          <Avatar className="avatar"
-            sx={{ width: 150, height: 150, bgcolor: "#FFBF69", marginRight: 3 }}
-          >
-            <h1 className="iconeSS">G</h1>
-          </Avatar>
           {profissionalSS.map((element) => (
             <Profissionalprop className="dadosSS" key={profissionalSS.id} profissionalSS={element} />
             ))}
 
-          <div className="caixa1">
-
-              <p className="dadosSS">
-                Nome
-                <br />
-                Estado
-                <br />
-                Cidade
-              </p>
-
-            
-            <Button variant="outline-dark">Ver mais</Button>{" "}
-          
-          </div>
-        </div>
-        <br />
-        <div className="perfilAzul">
-          <Avatar className="avatar"
-            sx={{ width: 150, height: 150, bgcolor: "#5FC2B0", marginRight: 3 }}
-          >
-            <h1 className="iconeSS">L</h1>
-          </Avatar>
-          <div className="caixa2">
-            <p className="dadosSS">
-              Nome
-              <br />
-              Estado
-              <br />
-              Cidade
-            </p>
-            <Button variant="outline-dark">Ver mais</Button>{" "}
-          </div>
-        </div>
-        <br />
-        <div className="perfilClaro">
-          <Avatar className="avatar"
-            sx={{ width: 150, height: 150, bgcolor: "#FABE36", marginRight: 3 }}
-          >
-            <h1 className="iconeSS">M</h1>
-          </Avatar>
-          <div className="caixa3">
-            <p className="dadosSS">
-              Nome
-              <br />
-              Estado
-              <br />
-              Cidade
-            </p>
-            <Button variant="outline-dark">Ver mais</Button>{" "}
-          </div>
-        </div>
-        <br />
-        <div className="perfilLaranjaClaro">
-          <Avatar className="avatar"
-            sx={{ width: 150, height: 150, bgcolor: "#CBF3F0", marginRight: 3 }}
-          >
-            <h1 className="iconeSS">N</h1>
-          </Avatar>
-          <div className="caixa4">
-            <p className="dadosSS">
-              Nome: 
-              <br />
-              Estado
-              <br />
-              Cidade
-            </p>
-            <Button variant="outline-dark">Ver mais</Button>{" "}
-          </div>
-        </div>
+      </div>
       </div>
       <div className="tudoComentarios">
+      
         <div className="barraConteAqui">
           <p className="perguntaSS">Qual a sua opinião sobre esse serviço?</p>
           <div className="barraIcon">
@@ -142,16 +92,16 @@ function ServicoSelecionado() {
           </IconButton>
           </div>
         </div>
+         
         <div className="Comentarios1">
-            <div className="C1">
-                <p>" <br/><br/><br/><br/> "</p>
-            </div>
-            <div className="C1">
-                <p>" <br/><br/><br/><br/> "</p>
-            </div>
-            <div className="C1">
-                <p>" <br/><br/><br/><br/> "</p>
-            </div>
+        {comentariosSS.map((element) => (
+            <>
+            <Comentarioprop key={comentariosSS.id} comentariosSS={element} />
+            
+            </>
+            ))} 
+        
+            
         </div>
         <div className="Comentarios1">
             <div className="C2">

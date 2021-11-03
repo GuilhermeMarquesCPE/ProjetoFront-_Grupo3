@@ -13,6 +13,7 @@ import ServicoSelecionado from "./pages/ServicoSelecionado";
 import AlterarDados from "./pages/AlterarDados";
 import TemporaryDrawer from "./Components/TemporaryDrawer";
 import { isAuthenticated } from "./services/auth";
+import perfilPessoal from "./pages/perfilPessoal";
 
 const PrivateRoute = ({ component: Component, ...rest}) => (
     <Route
@@ -43,6 +44,7 @@ function Routes(){
                 <PrivateRoute path="/alterardados" component={AlterarDados} />
                 <Route exact path="/servicoselecionado" component={ServicoSelecionado} />
                 <Route exact path="/temporarydrawer" component={TemporaryDrawer}/>
+                <PrivateRoute path="/perfilPessoal" component={perfilPessoal} />
                 <Route path="/">
                     <Home/>
                 </Route>

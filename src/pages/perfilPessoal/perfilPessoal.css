@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital@1&display=swap');
+
+.baseP {
+    height: auto;
+    display: flex;
+    flex-direction:column;
+    font-family: 'Fira Sans';
+    justify-content: center;
+    vertical-align: middle;
+    background-image: url("./brancobackground.jpg");
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 0em;
+}
+
+.fraseP {
+    padding-bottom: 1em;
+    padding-top: 1em;
+    margin-right: 60%;
+}
+
+.iconeP {
+    padding-top: 0.2em;
+    font-size: 4em;
+    color: black;
+    font-family: 'Fira Sans';
+}
+
+.ChangeData {
+    font-family: 'Fira Sans';
+    text-decoration: none;
+    color: #5FC2B0;
+    padding-right: 1em;
+}
+.change {
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    flex-direction: row;
+}
+.ChangePassword {
+    font-family: 'Fira Sans';
+    text-decoration: none;
+    color: #5FC2B0;
+}
+.ChangeData:hover {
+    color: #FCC034;
+}
+.ChangePassword:hover {
+    color: #FCC034;
+}
+
+.informacoesP{
+    
+    padding-top: 1em;
+    line-height: 1em;
+}
+.informacoesP p{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.dadosPerfil {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2em;
+    background-color: #5FC2B0;
+    padding: 2em;
+    margin-right: 11%;
+    margin-left: 11%;
+    margin-bottom: 4%;
+    border-radius: 1em;
+    margin-top:  3%;
+    word-break: break-word;
+}
+
+.lineP {
+    display: flex;
+}
+
+.lineP p {
+    max-width: 90%;
+} 
+
+
+.iconperfil {
+    width: 2em;
+    height: 2em;
+    padding-bottom: 0.7em;
+}
+
+
+@media (max-width: 430px) {
+    .dadosPerfil {
+        display: flex;
+        flex-direction: column;
+        padding: 1em;
+        font-size: 1em;        
+    }
+    .iconperfil {
+        width: 2em;
+        height: 2em;
+    }
+    .lineP p {
+        max-width: 90%;
+        
+    }
+    .fraseP {
+        margin-right: 45%;
+    }
+    .informacoesP p{
+        display:flex;
+        flex-direction:column;
+        
+        align-items:center;
+    }
+}

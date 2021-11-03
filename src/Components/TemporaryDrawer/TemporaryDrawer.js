@@ -34,7 +34,7 @@ export default function TemporaryDrawer() {
       <List className="navbardrawer">
                 <Link to="home" className="DrawerLink">Home</Link>
                 <Link to="servicos" className="DrawerLink">Serviços</Link>
-                <Link to="perfil" className="DrawerLink">Perfil</Link>
+                <Link to="perfilPessoal" className="DrawerLink">Perfil</Link>
                 <Link to="Cadastro" className="DrawerLink">Cadastro</Link>
                 <Link to="Login" className="DrawerLink">Login</Link>          
       </List>

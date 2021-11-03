@@ -3,8 +3,6 @@
 export const TOKEN_KEY = "@autonomeasy-Token";
 export const ID_KEY = "@autonomeasy-Id";
 
-  
-
 export const isAuthenticated = () => sessionStorage.getItem(TOKEN_KEY) !== null;
 export const getId = () => sessionStorage.getItem(ID_KEY);
 export const getToken = () => sessionStorage.getItem(TOKEN_KEY);

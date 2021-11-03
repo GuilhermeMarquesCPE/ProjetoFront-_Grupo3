@@ -1,23 +1,25 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./ProfissionalSS.css";
 import { Button } from "react-bootstrap";
 import { Avatar } from "@material-ui/core";
+import { useHistory } from "react-router-dom";
+
 
 function Profissionalprop({profissionalSS}){
-    console.log(profissionalSS);
+
+    const history = useHistory();
+    
+    function perfilSelecionado(){
+      history.push({
+        pathname: "/perfil",
+        state: {profissionalSS},
+      })
+    }
     return (
+
     <div className="profissionais">
         <br/>
     <div className="perfilLaranja">
-        {/* <p className="dadosSSprop">
-            <div className="nomeprossional">{profissionalSS.nome}</div>
-            <div className="estadoprossional">{profissionalSS.estado}</div>
-            <div className="cidadeprossional">{profissionalSS.cidade}</div>
-
-        </p> */}
-        {/* <div className="perfilLaranja"> */}
-          
-
           <Avatar className="avatar"
             sx={{ width: 150, height: 150, bgcolor: "#FFBF69", marginRight: 3 }}
           >
@@ -33,11 +35,9 @@ function Profissionalprop({profissionalSS}){
                 Cidade: {profissionalSS.cidade}
               </p>
 
-            
-            <Button variant="outline-dark">Ver mais</Button>{" "}
+              <Button variant="outline-dark" onClick={() => perfilSelecionado()} >Ver mais</Button>
           
           </div>
-          {/* </div> */}
     </div>
     </div>
     

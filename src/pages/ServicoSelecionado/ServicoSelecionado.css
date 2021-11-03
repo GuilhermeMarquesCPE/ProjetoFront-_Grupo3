@@ -176,15 +176,7 @@
     width:90%
 }
 
-.Comentarios1 {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-right: 11%;
-    margin-left: 11%;
-    margin-bottom: 3%;
 
-}
 .barraIcon{
     width: 50%;
     display: flex;
@@ -193,14 +185,7 @@
     justify-content: center;
 }
 
-.C1 {
-    display: flex;
-    word-break: break-word;
-    border-style: solid;
-    width:20%;
-    height: 50%;
-    border-radius: 0.5em;
-}
+
 .C2 {
     display: flex;
     word-break: break-word;

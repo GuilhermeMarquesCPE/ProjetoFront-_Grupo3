@@ -1,15 +1,30 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Navbar from "../../Components/Navbar";
 import "./Perfil.css";
 import Footer from "../../Components/Footer";
 import { Avatar } from "@material-ui/core";
 import { Link } from "react-router-dom";
 import { MdLocationCity, MdLocationPin, MdWork, MdEditNote, MdCall, MdPerson} from "react-icons/md";
+import api from "../../services/api";
 
 function Perfil() {
 
+  const [elementos,setElementos] = useState([]);
+
+  useEffect(async() => {
+    const tipos = await api.get('/profissional/todos');
+    const auxTipos = [];
+    tipos.data.forEach((response) => {
+        auxTipos.push(response.nome);
+    });
+
+    setElementos(auxTipos);
+
+},[]);
+
+
   const usuarioPerfil = {
-    nome: "Laura Pires",
+    nome: elementos,
     email: "laurapires@gmail.com",
     estado: "Minas Gerais",
     servico: "Babá",
@@ -28,7 +43,7 @@ function Perfil() {
           <h1 className="iconeP">{usuarioPerfil.nome[0]}</h1>
         </Avatar>
         <div className="informacoesP">
-          <p> Nome: &nbsp;<div> {usuarioPerfil.nome} </div></p>
+          <p> Nome: &nbsp;<div>{usuarioPerfil.nome} </div></p>
           <p> Email: &nbsp;<div>{usuarioPerfil.email}</div></p>
         </div>
         <div className="change">

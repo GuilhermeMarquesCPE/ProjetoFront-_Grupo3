@@ -1,15 +1,31 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./Servicos.css";
+import { Link } from "react-router-dom";
 import { Button } from "react-bootstrap";
 import { BiSearchAlt } from "react-icons/bi";
 import Footer from "../../Components/Footer";
 import Navbar from "../../Components/Navbar";
+import api from "../../services/api";
 
 
 function Servicos(){
-    const data= [
-        "Professores Particulares", "Fotógrafos", "Engenheiros", "Encanadores", "Programadores", "Editores de Vídeo", "Pintores", "Cuidadores de Pet", "Cozinheiros", "Costureiros", "Babás", "Enfermeiros"
-    ]
+
+    const[elementos, setElementos] = useState([]);
+
+    useEffect(async() => {
+        const tipos = await api.get('/servico/tipos');
+        const auxTipos = [];
+        tipos.data.forEach((response) => {
+            auxTipos.push({label:response.nome, value:response.servico_id});
+        });
+        
+        setElementos(auxTipos);
+        
+    },[]);
+    
+    // const data= [
+    //     "Professores Particulares", "Fotógrafos", "Engenheiros", "Encanadores", "Programadores", "Editores de Vídeo", "Pintores", "Cuidadores de Pet", "Cozinheiros", "Costureiros", "Babás", "Enfermeiros"
+    // ]
     return (
         <div className="Servicos">
             <Navbar/>
@@ -31,9 +47,11 @@ function Servicos(){
 
                 </div>
                 <div className="trabalhos">
-                    {data.map((element, index) => (
+                    {elementos.map((element, index) => (
                         <>
-                        <Button variant="outline-dark" className="emprego">{element}</Button> 
+                        {<Link to={`/servicoselecionado/${element.value}`} >
+                            <Button variant="outline-dark" className="emprego" value={element.value}>{element.label}</Button>
+                        </Link>}
                     {(index%2) ? (<br/>):<></>}
                         </>
                     ))}

@@ -5,8 +5,35 @@ import "./ServicoSelecionado.css";
 import { Avatar, IconButton } from "@material-ui/core";
 import { Button } from "react-bootstrap";
 import { BiSend } from "react-icons/bi";
+import { getListItemAvatarUtilityClass } from "@mui/material";
+
+import Profissionalprop from "../../Components/ProfissionalSS/ProfissionalSS";
 
 function ServicoSelecionado() {
+
+  const profissionalSS = [
+    {
+      nome:"Laura",
+      estado: "Minas",
+      cidade: "Belo Horizonte"
+    },
+    {
+      nome:"Matheus",
+      estado: "Minas",
+      cidade: "Belo Horizonte"
+    },
+    {
+      nome:"Gabriela",
+      estado: "Minas",
+      cidade: "Belo Horizonte"
+    },
+    {
+      nome:"Guilherme",
+      estado: "Minas",
+      cidade: "Belo Horizonte"
+    }
+  ]
+
   return (
     <div className="baseSS">
       <Navbar />
@@ -18,21 +45,32 @@ function ServicoSelecionado() {
       <br />
       <br />
       <div className="profissionais">
+      
         <div className="perfilLaranja">
+          
+
           <Avatar className="avatar"
             sx={{ width: 150, height: 150, bgcolor: "#FFBF69", marginRight: 3 }}
           >
             <h1 className="iconeSS">G</h1>
           </Avatar>
+          {profissionalSS.map((element) => (
+            <Profissionalprop className="dadosSS" key={profissionalSS.id} profissionalSS={element} />
+            ))}
+
           <div className="caixa1">
-            <p className="dadosSS">
-              Nome
-              <br />
-              Estado
-              <br />
-              Cidade
-            </p>
+
+              <p className="dadosSS">
+                Nome
+                <br />
+                Estado
+                <br />
+                Cidade
+              </p>
+
+            
             <Button variant="outline-dark">Ver mais</Button>{" "}
+          
           </div>
         </div>
         <br />

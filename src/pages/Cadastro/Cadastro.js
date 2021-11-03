@@ -50,8 +50,7 @@ function Cadastro(){
     async function handleCadastro(e) {
         e.preventDefault();
         try {
-            console.log(trabalho);
-            console.log(profissional);
+            
           const response = await api.post('/profissional', profissional);
           
           history.push("/login");

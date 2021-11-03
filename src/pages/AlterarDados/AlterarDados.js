@@ -6,6 +6,7 @@ import Navbar from "../../Components/Navbar";
 import Footer from "../../Components/Footer";
 import api from "../../services/api";
 
+
 function AlterarDados(){
     
     function cancelar(){
@@ -20,6 +21,7 @@ function AlterarDados(){
     const [Estado, setEstado] = useState();
     const [elementos, setElementos] = useState([]);
     const [trabalho, setTrabalho] = useState();
+    const userId = sessionStorage.getItem("@autonomeasy-Id");
 
     useEffect(async() => {
         const tipos = await api.get('/servico/tipos');
@@ -48,11 +50,8 @@ function AlterarDados(){
     async function handleAlterarDados(e) {
         e.preventDefault();
         try {
-            console.log(trabalho);
-            console.log(profissional);
-        //   const response = await api.update(`/profissionalUpdate/${profissionais_id}`, profissional);
-          
-          history.push("/perfil");
+            const response = await api.put(`/profissionalUpdate/${userId}`, profissional);
+            history.push("/perfil");
         } catch (error) {
           if(error.response.status === 403){
             alert("Credenciais invalidas!");

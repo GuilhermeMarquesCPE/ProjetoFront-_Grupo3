@@ -87,18 +87,18 @@ function Home(){
     <div className="notasH">
         <div className="missao">
             <p className="titleMissao">MISSÃO <FaWrench/></p>
-            <p className="notasMissao"> Divulgar trabalhadores
-                <br/> autônomos 
-                <br/>competentes, a fim de 
+            <p className="notasMissao"> Divulgar trabalhadores 
+                <br/>autônomos, a fim de 
                 <br/>serem reconhecidos e 
                 <br/>se tornarem referência 
                 <br/>em sua área de atuação</p>
         </div>
         <div className="visao">
             <p className="titleVisao">VISÃO <FaRegEye/></p>
-            <p className="notasVisao">Fornecer o suporte
-                <br/> digital necessário para 
-                <br/>difundir capacidades 
+            <p className="notasVisao">Fornecer um suporte
+                <br/> digital necessário  
+                <br/>para difundir 
+                <br/> capacidades profissionais
                 <br/>pouco valorizadas</p>
         
         </div>
@@ -107,6 +107,7 @@ function Home(){
             <p className="notasValores">• Trabalho em equipe
                 <br/> • Profissionalismo
                 <br/> • Respeito
+                <br/> • Diversidade
                 <br/> • Disponibilidade</p>
         </div>  
     </div>

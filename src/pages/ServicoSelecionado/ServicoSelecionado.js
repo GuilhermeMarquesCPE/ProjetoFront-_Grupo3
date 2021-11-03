@@ -37,7 +37,7 @@ function ServicoSelecionado() {
 
   const comentariosSS = [
     {
-      comentario:"Muito bom o servico"
+      comentario:"Muito bom o servico "
     },
     {
       comentario:"Muito bom o servico"
@@ -105,7 +105,7 @@ function ServicoSelecionado() {
         </div>
         <div className="Comentarios1">
             <div className="C2">
-                <p>" <br/><br/><br/><br/> "</p>
+                <p>" <br/><br/><br/> "</p>
             </div>
             <div className="C2">
                 <p>" <br/><br/><br/><br/> "</p>

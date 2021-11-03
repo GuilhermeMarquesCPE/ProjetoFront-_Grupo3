@@ -190,8 +190,7 @@
     display: flex;
     word-break: break-word;
     border-style: solid;
-    width:20%;
-    height: 50%;
+    height: 12rem;
     border-radius: 0.5em;
 }
 
@@ -200,6 +199,7 @@
     flex-direction: center;
     justify-content: center;
 }
+
 
 @media (max-width: 480px){
     .MuiAvatar-root.MuiAvatar-circular.MuiAvatar-colorDefault.avatar.css-1bcs78w-MuiAvatar-root{
@@ -280,6 +280,7 @@
     }
     .C2{
         display: none;
+        width:20%;
     }
     .description{
         font-size: 150%;
@@ -353,6 +354,7 @@
     }
     .C2{
         display: none;
+        width:20%;
     }
     .description{
         font-size: 150%;
@@ -417,15 +419,17 @@
         text-align: center;
     }
     .Comentarios1{
+        flex-direction: row;
         margin-left:0;
     }
     .C2{
-        width:100%;
-        margin-left: 10%;
+        margin-left: 4%;
+        margin-right: 4%;
+        width:20%;
     }
     .C1{
-        width:100%;
-        margin-left: 10%;
+        margin-left: 4%;
+        margin-right: 4%;
     }
     .description{
         font-size: 150%;
@@ -436,7 +440,7 @@
     }
 }
 
-@media (max-width: 1000px) and (min-width:756px){
+@media (max-width: 1700px) and (min-width:756px){
     
     .barraConteAqui{
         flex-direction: column;
@@ -452,15 +456,17 @@
         text-align: center;
     }
     .Comentarios1{
+        flex-direction: row;
         margin-left:0;
     }
     .C2{
-        width:100%;
-        margin-left: 10%;
+        margin-left: 4%;
+        margin-right: 4%;
+        width:15%;
     }
     .C1{
-        width:100%;
-        margin-left: 10%;
+        margin-left: 4%;
+        margin-right: 4%;
     }
     .description{
         font-size: 150%;

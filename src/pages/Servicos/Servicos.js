@@ -23,9 +23,6 @@ function Servicos(){
         
     },[]);
     
-    // const data= [
-    //     "Professores Particulares", "Fotógrafos", "Engenheiros", "Encanadores", "Programadores", "Editores de Vídeo", "Pintores", "Cuidadores de Pet", "Cozinheiros", "Costureiros", "Babás", "Enfermeiros"
-    // ]
     return (
         <div className="Servicos">
             <Navbar/>
@@ -49,7 +46,7 @@ function Servicos(){
                 <div className="trabalhos">
                     {elementos.map((element, index) => (
                         <>
-                        {<Link to={`/servicoselecionado/${element.value}`} >
+                        {<Link to={`/servicoselecionado?servico=${element.value}`} >
                             <Button variant="outline-dark" className="emprego" value={element.value}>{element.label}</Button>
                         </Link>}
                     {(index%2) ? (<br/>):<></>}

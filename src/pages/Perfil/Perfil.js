@@ -21,10 +21,6 @@ function Perfil(profissionalSS) {
           <p> Nome: &nbsp;<div>{profissionalSS.location.state.profissionalSS.nome} </div></p>
           <p> Email: &nbsp;<div>{profissionalSS.location.state.profissionalSS.email}</div></p>
         </div>
-        <div className="change">
-        <Link to="alterardados" className="ChangeData"> Alterar dados </Link>
-        <Link to="cadastro" className="ChangePassword"> Alterar senha </Link>
-        </div>
       </div>
         <div className="dadosPerfil">
           <div className="lineP">

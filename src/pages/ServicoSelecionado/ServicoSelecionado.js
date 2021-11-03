@@ -56,7 +56,8 @@ function ServicoSelecionado() {
       comentario:"Muito bom o servico"
     }
   ]
-
+  console.log(servico);
+  console.log(profissionais);
   return (
     <div className="baseSS">
       <Navbar />
@@ -68,7 +69,7 @@ function ServicoSelecionado() {
       <br />
       <br />
       <div className="profissionais">
-      
+
         <div >
           
           {profissionais.map((element) => (

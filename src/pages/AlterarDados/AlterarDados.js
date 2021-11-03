@@ -1,28 +1,67 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./AlterarDados.css";
-import { Form, Button, Dropdown, DropdownButton } from "react-bootstrap";
+import { Form, Button } from "react-bootstrap";
 import { useHistory, Link } from "react-router-dom"; 
 import Navbar from "../../Components/Navbar";
 import Footer from "../../Components/Footer";
-
+import api from "../../services/api";
 
 function AlterarDados(){
     
-    function cadastro(){
+    function cancelar(){
         history.push("perfil");
     }
-    function cancelar(){
-        history.push("perfil")
-    }
 
-    const [email, setEmail] = useState();
-    const [password, setPassword] = useState();
+    const [descricaoo, setDescricaoo] = useState();
     const history = useHistory();
     const [Nome, setNome] = useState();
-    const [ConfirmPassword, setConfirmPassword] = useState();
     const [celular, setCelular] = useState();
     const [Cidade, setCidade] = useState();
     const [Estado, setEstado] = useState();
+    const [elementos, setElementos] = useState([]);
+    const [trabalho, setTrabalho] = useState();
+
+    useEffect(async() => {
+        const tipos = await api.get('/servico/tipos');
+        const auxTipos = [];
+        tipos.data.forEach((response) => {
+            auxTipos.push({label:response.nome, value:response.servico_id});
+        });
+        
+        setElementos(auxTipos);
+        
+    },[]);
+    
+    const profissional = 
+        {
+            profissional_servico_id: trabalho,
+            nome: Nome,
+            estado: Estado,
+            cidade: Cidade,
+            contato: celular,
+            descricao: descricaoo,
+        };
+    
+    
+    
+    
+    async function handleAlterarDados(e) {
+        e.preventDefault();
+        try {
+            console.log(trabalho);
+            console.log(profissional);
+        //   const response = await api.update(`/profissionalUpdate/${profissionais_id}`, profissional);
+          
+          history.push("/perfil");
+        } catch (error) {
+          if(error.response.status === 403){
+            alert("Credenciais invalidas!");
+          }
+          else {
+            alert(error.response.data.notification);
+          }
+        }
+      }
 
     return (
         <div className="cadastroAlterar">
@@ -44,28 +83,26 @@ function AlterarDados(){
                         <Form.Group className="mb-3" controlId="Cidade">
                             <Form.Control type="Cidade" placeholder="Cidade" onChange={(e) => setCidade(e.target.value)} />
                         </Form.Group>
+                    
+
+                        <select class="form-control" aria-label="Default select example" onChange={(e) => setTrabalho(e.target.value)}>
+                        <option >Escolha um trabalho oferecido</option>
+
+                        {elementos.map((item) => (
+                            
+                            <option value={item.value}>{item.label}</option>
+    
+                        ))};
+                    
+                        </select>
                     </Form>
                     </div>
-
-                    <DropdownButton className="dropButtonAD" title="Trabalhos oferecidos" >
-                    <Dropdown.Item as="button">Pintor</Dropdown.Item>
-                        <Dropdown.Item as="button">Professor Particular</Dropdown.Item>
-                        <Dropdown.Item as="button">Engenheiro</Dropdown.Item>
-                        <Dropdown.Item as="button">Fotógrafo</Dropdown.Item>
-                        <Dropdown.Item as="button">Cozinheiro</Dropdown.Item>
-                        <Dropdown.Item as="button">Programador</Dropdown.Item>
-                        <Dropdown.Item as="button">Babá</Dropdown.Item>
-                        <Dropdown.Item as="button">Encanador</Dropdown.Item>
-                        <Dropdown.Item as="button">Cuidador de Pets</Dropdown.Item>
-                        <Dropdown.Item as="button">Editor de Video</Dropdown.Item>
-                        <Dropdown.Item as="button">Costureiro</Dropdown.Item>
-                    </DropdownButton>
                     <p className="cadastre2AD"> Altere sua descrição! (Pontos fortes, anos de experiência, etc) :</p>
-                    <textarea className="descricaoAD"> </textarea>
+                    <textarea className="descricaoAD" onChange={(e) => setDescricaoo(e.target.value)}></textarea>
 
                     <div className="CadastrarButtonAD">
                         <Button variant="outline-dark" onClick={cancelar}>Cancelar</Button>
-                        <Button variant="outline-dark" onClick={cadastro}>Salvar alterações</Button>
+                        <Button variant="outline-dark" onClick={handleAlterarDados}>Salvar alterações</Button>
                     </div>  
             </div>
             <Footer/>

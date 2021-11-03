@@ -185,7 +185,22 @@
     justify-content: center;
 }
 
+.Comentarios1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+    margin-bottom: 3%;
 
+}
+.C1 {
+    display: flex;
+    word-break: break-word;
+    border-style: solid;
+    width:15rem;
+    height:12rem;
+    border-radius: 0.5em;
+}
 .C2 {
     display: flex;
     word-break: break-word;

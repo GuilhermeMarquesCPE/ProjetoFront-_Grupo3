@@ -33,7 +33,7 @@ function Login() {
      <div className="baseL">
        <Navbar/>
         <div className="containerL">
-               <img className="imagemL" src="/images/image.png" alt="Entre"/>
+          <p className="logar">Entre  em AutonomEASY</p>
                <Form className="inputsL">
                 <Form.Group className="mb-3" controlId="Email">
                 <br/>

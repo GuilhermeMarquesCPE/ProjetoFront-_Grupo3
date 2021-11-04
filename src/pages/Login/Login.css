@@ -6,6 +6,13 @@
     padding: 13.5em;
 
 }
+.logar{
+    font-size: 2.5em;
+    font-family: 'Fira Sans';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .baseL {
     height: auto;
@@ -67,9 +74,11 @@
 @media (max-width:500px){
     .containerL{
         padding:8em;
+        padding-top:
     }
-    .imagemL{
-        width: 13em;
+    .logar{
+        text-align: center;
+        font-size: 1.5rem;
     }
     .novoL{
         flex-direction: column;
@@ -80,8 +89,9 @@
 }
 
 @media (max-width:1000px) and (min-width:500px){
-    .imagemL{
-        width:20em;
+    .logar{
+        font-size: 2rem;
+        text-align: center;
     }
     .novoL{
         flex-direction: column;

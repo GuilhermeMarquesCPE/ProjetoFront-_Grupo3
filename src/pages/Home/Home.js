@@ -1,9 +1,8 @@
 import React from "react";
 import {Link} from "react-router-dom";
-import { Carousel, Button } from "react-bootstrap";
+import { Carousel } from "react-bootstrap";
 import "./Home.css";
 import Cadastro from "../Cadastro";
-import Login from "../Login/Login";
 import Servicos from "../Servicos/Servicos";
 import Navbar from "../../Components/Navbar";
 import Footer from "../../Components/Footer";
@@ -22,35 +21,35 @@ function Home(){
                 <Carousel.Item className="carrosselItem">
                     <img
                     className="d-block w-100"
-                    src="/Images/imagem3.jpg"
+                    src="/Images/helmet.jpg"
                     alt="First slide"
                     />
                     <Carousel.Caption>
-                    <h3>Engenheiros</h3>
+                    <Link to="/servicoselecionado?servico=7dee1b35-4990-48be-b6af-643125b629e9"><h3>Engenheiros</h3></Link>
                     <p>Elaboração de projetos diversificados</p>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item className="carrosselItem">
                     <img
                     className="d-block w-100"
-                    src="/Images/pintor.jpg"
+                    src="/Images/PINTAR.jpg"
                     alt="Second slide"
                     />
 
                     <Carousel.Caption>
-                    <h3>Pintores</h3>
+                    <Link to="/servicoselecionado?servico=6a9a41d6-b598-4205-93c7-f6dfceabbcc6"><h3>Pintores</h3></Link>
                     <p>Decoração de paredes e outras superfícies</p>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item className="carrosselItem">
                     <img
                     className="d-block w-100"
-                    src="/Images/professor.jpg"
+                    src="/Images/professor particular.png"
                     alt="Third slide"
                     />
 
                     <Carousel.Caption>
-                    <h3>Professor Particular</h3>
+                    <Link to="/servicoselecionado?servico=de3d9596-ebcf-4f58-8786-b2427b5c0d3e"><h3>Professor Particular</h3></Link>
                     <p>Reforço para diferentes disciplinas</p>
                     </Carousel.Caption>
                 </Carousel.Item>

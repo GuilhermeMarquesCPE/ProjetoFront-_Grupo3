@@ -194,7 +194,7 @@
 
 }
 .C1 {
-    /* display: flex; */
+    display: flex;
     word-break: break-word;
     border-style: solid;
     width:15rem;
@@ -203,6 +203,10 @@
     font-size: 1.25em;
     padding: 1em;
     text-align: center;
+    overflow:auto;
+}
+.C1::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
 }
 .C2 {
     display: flex;

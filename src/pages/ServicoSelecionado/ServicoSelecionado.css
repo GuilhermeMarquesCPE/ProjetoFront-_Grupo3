@@ -134,10 +134,6 @@
     font-family: 'Fira Sans';
 }
 
-
-
-
-
 .tudoComentarios {
     display: flex;
     flex-direction: column;
@@ -205,6 +201,8 @@
     height:12rem;
     border-radius: 0.5em;
     font-size: 1.25em;
+    padding: 1em;
+    text-align: center;
 }
 .C2 {
     display: flex;

@@ -9,7 +9,7 @@ function Navbar() {
     <div className="cabecalhoN">
             <div className="LogoButton">
             <div className="buttonNavbar"><TemporaryDrawer/></div>
-            <img src="/Images/logo.png" alt="logo" className="logoN"></img>
+            <Link to="home"><img src="/Images/logo.png" alt="logo" className="logoN"></img></Link>
             </div>
                          
             <div className="navbar">

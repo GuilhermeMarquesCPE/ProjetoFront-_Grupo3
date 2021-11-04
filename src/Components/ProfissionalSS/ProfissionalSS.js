@@ -23,7 +23,7 @@ function Profissionalprop({profissionalSS}){
           <Avatar className="avatar"
             sx={{ width: 150, height: 150, bgcolor: "#FFBF69", marginRight: 3 }}
           >
-            <h1 className="iconeSS">{profissionalSS.nome[0]}</h1>
+            <h1 className="iconeSS">{profissionalSS.nome[0].toUpperCase()}</h1>
           </Avatar>
         <div className="caixa1">
 

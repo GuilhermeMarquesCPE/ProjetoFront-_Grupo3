@@ -13,8 +13,8 @@ function Footer(){
         <div className="rodape">
             <div className="text1">
                 <p className="text3">Entrem em contato!</p>
-                <FaFacebookSquare className="iconFooter"/>
-                <BsInstagram className="iconFooter"/>
+                <a href="https://www.facebook.com/cpejr"><FaFacebookSquare className="iconFooter" /></a>
+                <a href="https://www.instagram.com/cpe.jr"><BsInstagram className="iconFooter"/></a>
                 <IoLogoWhatsapp className="iconFooter"/>
                 <BsLinkedin className="iconFooter"/>
             </div>

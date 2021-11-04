@@ -74,10 +74,10 @@ function Home(){
 
         <div className="botoesH">
             <Link to="servicos">
-                <button type="button" class="btn btn-outline-dark btn-lg" onClick={Servicos}>Encontrar profissional</button>
+                <button type="button" class="btn btn-outline-dark btn-lg" onClick={() => Servicos}>Encontrar profissional</button>
             </Link>
             <Link to="Cadastro">
-                <button type="button" class="btn btn-outline-dark btn-lg" onClick={Cadastro}>Quero trabalhar</button>
+                <button type="button" class="btn btn-outline-dark btn-lg" onClick={() => Cadastro}>Quero trabalhar</button>
             </Link>
         </div>
         </div>

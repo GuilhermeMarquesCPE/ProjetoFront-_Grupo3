@@ -48,7 +48,14 @@
 .CadastroLink {
     color: #5fc2b0;
 }
-
+.CadastroLinkL {
+    color: #5fc2b0;
+    text-decoration: none;
+}
+.CadastroLinkL:hover {
+    color: #141414;
+    text-decoration: none;
+}
 .novoL {
     display: flex;
     flex-direction: row;

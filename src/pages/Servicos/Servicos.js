@@ -11,6 +11,7 @@ import api from "../../services/api";
 function Servicos(){
 
     const[elementos, setElementos] = useState([]);
+    const[filtrado, setFiltrado] = useState([]); 
 
     useEffect(async() => {
         const tipos = await api.get('/servico/tipos');
@@ -21,13 +22,30 @@ function Servicos(){
         
         setElementos(auxTipos);
         
+        setFiltrado(auxTipos);
     },[]);
     
+    function handleSearch(valor){
+        const auxValor = elementos.filter((servico) => {
+            if(valor === ""){
+                return servico;
+            }
+            return (
+                servico.label.toLowerCase().trim().includes(valor.toLowerCase().trim())
+            );
+        });
+        setFiltrado(auxValor);
+    }
     return (
         <div className="Servicos">
             <Navbar/>
             <form className="barraBusca">
-                <input class="form-control me-2" type="search" placeholder="Pesquisar por profissional" className="pesquisa"></input>
+                <input class="form-control me-2" type="search" 
+                placeholder="Pesquisar por profissional" 
+                className="pesquisa" 
+                onChange={(e) => handleSearch(e.target.value)} >
+
+                </input>
                     <div className="searchButton">
                         <button class="btn btn-outline-success btn-sm" type="button">
                              <BiSearchAlt className="iconservicos"/><p className="buscarS">Buscar</p>
@@ -44,7 +62,7 @@ function Servicos(){
 
                 </div>
                 <div className="trabalhos">
-                    {elementos.map((element, index) => (
+                    {filtrado.map((element, index) => (
                         <>
                         {<Link to={`/servicoselecionado?servico=${element.value}`} >
                             <Button variant="outline-dark" className="emprego" value={element.value}>{element.label}</Button>

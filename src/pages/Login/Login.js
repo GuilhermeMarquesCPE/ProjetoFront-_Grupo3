@@ -47,7 +47,7 @@ function Login() {
                   <Button variant="outline-dark" onClick={handleLogin}>Entrar</Button>
                 </div>
                 
-                <p className="novoL"> Novo no AutonomEASY? <Link to="cadastro" className="CadastroLinkL"> Cadastre-se</Link> </p>
+                <p className="novoL"> Novo no AutonomEASY? &nbsp;<Link to="cadastro" className="CadastroLinkL">Cadastre-se</Link> </p>
             </div>
             <Footer/>
         </div>

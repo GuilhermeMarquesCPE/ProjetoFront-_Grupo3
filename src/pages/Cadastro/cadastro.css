@@ -48,6 +48,8 @@
 .cadastre2{
     font-size: 1em;
     font-family: 'Fira Sans';
+    padding:1em;
+    margin:none;
 }
 
 @media (max-width : 700px) {

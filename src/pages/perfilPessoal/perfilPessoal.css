@@ -36,10 +36,14 @@
     color: #5FC2B0;
     padding-right: 1em;
 }
+.alterarPP{
+    display: flex;
+    flex-direction: row;
+}
 .change {
     padding-top: 0.5em;
     padding-bottom: 0.5em;
-    flex-direction: row;
+    
 }
 .ChangePassword {
     font-family: 'Fira Sans';

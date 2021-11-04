@@ -18,7 +18,7 @@ function Login() {
       const response = await api.post('/login', {email, senha});
       alert("Bem vindo ", response.data.profissional.nome);
       login(response.data.accessToken, response.data.profissional.profissionais_id);
-      history.push("/home");
+      history.push("/perfilPessoal");
     } catch (error) {
       if(error.response.status === 403){
         alert("Credenciais invalidas!");

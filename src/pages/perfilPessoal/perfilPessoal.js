@@ -69,7 +69,9 @@ function PerfilPessoal() {
         <div className="alterarPP">
         <div className="change">
         <Link to="alterardados" className="ChangeData" > Alterar dados </Link>
+        <div to="alterardados" className="ChangeData" > Alterar senha </div>
         </div>
+        <br/>
         <div className="change">
         <Link className="ChangeData" onClick={handleLogout}> Sair </Link>
         </div>

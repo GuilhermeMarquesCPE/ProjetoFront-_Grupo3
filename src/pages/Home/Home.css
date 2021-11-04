@@ -84,7 +84,7 @@ p{
     justify-content: space-between;
     margin-left: 20%;
     margin-right: 15%;
-    width: 32%;
+    width: 32rem;
     height: 300%;
 }
 
@@ -101,13 +101,14 @@ p{
     .botoesH{
         display: flex;
         align-items: center;
+        flex-direction: column;
         justify-content: center;
         margin-left: 0%;  
         margin-right: 0%;
+        width:90%;
     }
     .btn.btn-outline-dark.btn-lg{
-        width: 100%;
-        font-size: 70%; 
+        width: 11rem;
     }
     .bora{
         padding: 1em;
@@ -127,15 +128,15 @@ p{
     }
     .botoesH{
         display: flex;
+        flex-direction: column;
         align-items: center;
         margin-left: 0%;  
         margin-right: 0%;
-        width: 75%;
+        width:90%;
 
     }
     .btn.btn-outline-dark.btn-lg{
-        width: 100%;
-        font-size: 70%; 
+        width: 12em;
     }
     .bora{
         display: flex;
@@ -159,7 +160,7 @@ p{
         align-items: center;
         margin-left: 0%;  
         margin-right: 0%;
-        width: 60%;
+        width: 20rem;
     }
     .btn.btn-outline-dark.btn-lg{
         width: 100%;
@@ -183,9 +184,10 @@ p{
     .botoesH{
         display: flex;
         align-items: center;
+        justify-content: space-between;
         margin-left: 0%;  
         margin-right: 0%;
-        width: 50%;
+        width:20rem;
 
     }
     .btn.btn-outline-dark.btn-lg{
@@ -212,7 +214,7 @@ p{
         align-items: center;
         margin-left: 0%;  
         margin-right: 0%;
-        width: 37%;
+        width: 20rem;
 
     }
     .btn.btn-outline-dark.btn-lg{

@@ -21,6 +21,8 @@ function AlterarDados(){
     const [Estado, setEstado] = useState();
     const [elementos, setElementos] = useState([]);
     const [trabalho, setTrabalho] = useState();
+    const[usuario, setUsuario] = useState([]);
+    const[servicoID, setServicoID] = useState([]);
     const userId = sessionStorage.getItem("@autonomeasy-Id");
 
     useEffect(async() => {
@@ -33,6 +35,25 @@ function AlterarDados(){
         setElementos(auxTipos);
         
     },[]);
+
+    
+    const usuarioID = sessionStorage.getItem("@autonomeasy-Id");
+    
+    useEffect(async() => {
+      const info = await api.get(`/profissionalget/${usuarioID}`);
+      setUsuario(info.data[0]);
+    },[usuarioID]);
+    
+
+    const servicoNome = usuario.profissional_servico_id;
+    
+    useEffect(async() => {
+    const respostaget = await api.get(`/servicoget/${servicoNome}`);
+    
+    setServicoID(respostaget.data[0]);
+    
+     
+  },[servicoNome]);
     
     const profissional = 
         {
@@ -71,21 +92,21 @@ function AlterarDados(){
                     <Form className="inputsAD">
                         <Form.Group className="mb-3" controlId="Nome">
                         <br/>
-                            <Form.Control type="nome" placeholder="Nome" onChange={(e) => setNome(e.target.value)} />
+                            <Form.Control type="nome" placeholder={usuario.nome} onChange={(e) => setNome(e.target.value)} />
                         </Form.Group>
                         <Form.Group className="mb-3" controlId="Celular">
-                            <Form.Control type="Celular" placeholder="Contato" onChange={(e) => setCelular(e.target.value)} />
+                            <Form.Control type="Celular" placeholder={usuario.contato} onChange={(e) => setCelular(e.target.value)} />
                         </Form.Group>
                         <Form.Group className="mb-3" controlId="Estado">
-                            <Form.Control type="Estado" placeholder="Estado" onChange={(e) => setEstado(e.target.value)} />
+                            <Form.Control type="Estado" placeholder={usuario.estado} onChange={(e) => setEstado(e.target.value)} />
                         </Form.Group>
                         <Form.Group className="mb-3" controlId="Cidade">
-                            <Form.Control type="Cidade" placeholder="Cidade" onChange={(e) => setCidade(e.target.value)} />
+                            <Form.Control type="Cidade" placeholder={usuario.cidade} onChange={(e) => setCidade(e.target.value)} />
                         </Form.Group>
                     
 
                         <select class="form-control" aria-label="Default select example" onChange={(e) => setTrabalho(e.target.value)}>
-                        <option >Escolha um trabalho oferecido</option>
+                        <option >{servicoID?.nome}</option>
 
                         {elementos.map((item) => (
                             
@@ -96,8 +117,9 @@ function AlterarDados(){
                         </select>
                     </Form>
                     </div>
+                    <br/>
                     <p className="cadastre2AD"> Altere sua descrição! (Pontos fortes, anos de experiência, etc) :</p>
-                    <textarea className="descricaoAD" onChange={(e) => setDescricaoo(e.target.value)}></textarea>
+                    <textarea className="descricaoAD" placeholder={usuario.descricao} onChange={(e) => setDescricaoo(e.target.value)}></textarea>
 
                     <div className="CadastrarButtonAD">
                         <Button variant="outline-dark" onClick={cancelar}>Cancelar</Button>

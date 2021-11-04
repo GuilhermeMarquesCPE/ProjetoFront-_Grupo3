@@ -3,15 +3,17 @@ import Navbar from "../../Components/Navbar";
 import "./perfilPessoal.css";
 import Footer from "../../Components/Footer";
 import { Avatar } from "@material-ui/core";
-import { Link } from "react-router-dom";
+import { useHistory, Link } from "react-router-dom";
 import { MdLocationCity, MdLocationPin, MdWork, MdEditNote, MdCall, MdPerson} from "react-icons/md";
 import api from "../../services/api";
+import {logout} from "../../services/auth";
 
 
 function PerfilPessoal() {
     const usuarioID = sessionStorage.getItem("@autonomeasy-Id");
     const[usuario, setUsuario] = useState([]);
     const[servicoID, setServicoID] = useState([]);
+    const history = useHistory();
     
     useEffect(async() => {
       const info = await api.get(`/profissionalget/${usuarioID}`);
@@ -32,7 +34,21 @@ function PerfilPessoal() {
     
      
   },[servicoNome]);
- 
+
+  async function handleLogout(e) {
+    e.preventDefault();
+    try {
+      logout();
+      history.push("/login");
+    } catch (error) {
+      if(error.response.status === 403){
+        alert("Credenciais invalidas!");
+      }
+      else {
+        alert(error.response.data.notification);
+      }
+    }
+  }
   
 
 
@@ -50,8 +66,13 @@ function PerfilPessoal() {
           <p> Nome: &nbsp;<div>{usuario.nome} </div></p>
           <p> Email: &nbsp;<div>{usuario.email}</div></p>
         </div>
+        <div className="alterarPP">
         <div className="change">
-        <Link to="alterardados" className="ChangeData"> Alterar dados </Link>
+        <Link to="alterardados" className="ChangeData" > Alterar dados </Link>
+        </div>
+        <div className="change">
+        <Link className="ChangeData" onClick={handleLogout}> Sair </Link>
+        </div>
         </div>
       </div>
         <div className="dadosPerfil">

@@ -25,6 +25,7 @@
 p{
     color: black;
 }
+
 .carousel-control-next-icon{
     color: black;
 }
@@ -32,20 +33,32 @@ p{
     color: black;
 }
 
-@media screen and (max-width:300px) {
+@media screen and (max-width:450px) {
  .carrossel {
      width: 100%;
      margin-left: 0%;
  }
+ .nomeServico{
+     font-size: 1rem;
+     height: 0.01rem;
+ }
+ .descricaoSH{
+     display: none;
+ }
+ 
 }
 
-@media screen and (max-width:600px) and (min-width:300px) {
+@media screen and (max-width:600px) and (min-width:450px) {
     .carrossel {
         width: 100%;
         margin-left: 0%;
     }
-   
-   }
+    .nomeServico{
+        font-size: 1.5rem;
+    }
+ 
+}
+
 
 .bora {
     padding: 3em;

@@ -25,8 +25,8 @@ function Home(){
                     alt="First slide"
                     />
                     <Carousel.Caption>
-                    <Link to="/servicoselecionado?servico=7dee1b35-4990-48be-b6af-643125b629e9"><h3>Engenheiros</h3></Link>
-                    <p>Elaboração de projetos diversificados</p>
+                    <Link to="/servicoselecionado?servico=7dee1b35-4990-48be-b6af-643125b629e9"><h3 className="nomeServico">Engenheiros</h3></Link>
+                    <p className="descricaoSH">Elaboração de projetos diversificados</p>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item className="carrosselItem">
@@ -37,8 +37,8 @@ function Home(){
                     />
 
                     <Carousel.Caption>
-                    <Link to="/servicoselecionado?servico=6a9a41d6-b598-4205-93c7-f6dfceabbcc6"><h3>Pintores</h3></Link>
-                    <p>Decoração de paredes e outras superfícies</p>
+                    <Link to="/servicoselecionado?servico=6a9a41d6-b598-4205-93c7-f6dfceabbcc6"><h3 className="nomeServico">Pintores</h3></Link>
+                    <p className="descricaoSH">Decoração de paredes e outras superfícies</p>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item className="carrosselItem">
@@ -49,8 +49,8 @@ function Home(){
                     />
 
                     <Carousel.Caption>
-                    <Link to="/servicoselecionado?servico=de3d9596-ebcf-4f58-8786-b2427b5c0d3e"><h3>Professor Particular</h3></Link>
-                    <p>Reforço para diferentes disciplinas</p>
+                    <Link to="/servicoselecionado?servico=de3d9596-ebcf-4f58-8786-b2427b5c0d3e"><h3 className="nomeServico">Professor Particular</h3></Link>
+                    <p className="descricaoSH">Reforço para diferentes disciplinas</p>
                     </Carousel.Caption>
                 </Carousel.Item>
     </Carousel>

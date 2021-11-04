@@ -223,7 +223,7 @@
 }
 
 
-@media (max-width: 480px){
+@media (max-width: 500px){
     .MuiAvatar-root.MuiAvatar-circular.MuiAvatar-colorDefault.avatar.css-1bcs78w-MuiAvatar-root{
         width: 10%;
         height: 0.3%;
@@ -314,7 +314,7 @@
     }
 }
 
-@media (max-width: 600px) and (min-width:480px){
+@media (max-width: 600px) and (min-width:500px){
     .MuiAvatar-root.MuiAvatar-circular.MuiAvatar-colorDefault.avatar.css-1bcs78w-MuiAvatar-root{
         width: 15%;
         height: 80%;

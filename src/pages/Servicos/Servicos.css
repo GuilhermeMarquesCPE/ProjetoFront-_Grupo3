@@ -2,7 +2,6 @@
 
 .conteudoS{
     display: flex;
-    align-items: center;
     justify-content: center;
     background-image: url("./fundoServicos.jpeg");
     background-position: center;

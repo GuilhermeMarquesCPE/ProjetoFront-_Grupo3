@@ -11,15 +11,31 @@ import api from "../../services/api";
 function PerfilPessoal() {
     const usuarioID = sessionStorage.getItem("@autonomeasy-Id");
     const[usuario, setUsuario] = useState([]);
+    const[servicoID, setServicoID] = useState([]);
     
     useEffect(async() => {
       const info = await api.get(`/profissionalget/${usuarioID}`);
-      console.log(info);
       setUsuario(info.data[0]);
       
       
     },[]);
-    console.log(usuario);
+
+
+
+    const servicoNome = usuario.profissional_servico_id;
+    
+    
+    useEffect(async() => {
+    const respostaget = await api.get(`/servicoget/${servicoNome}`);
+    
+    setServicoID(respostaget.data[0]);
+    
+     
+  },[servicoNome]);
+ 
+  
+
+
   return (
     <div className="baseP">
       <Navbar />
@@ -51,10 +67,15 @@ function PerfilPessoal() {
             <MdLocationCity className="iconperfil" />
             <p>Cidade: <div>{usuario.cidade}</div> </p> 
           </div>
+          
           <div className="lineP">
+          
             <MdWork className="iconperfil" />
-            <p>Tipo de Serviço: <div>{usuario.servico}</div> </p>
+              
+              <p>Tipo de Serviço: <div>{servicoID?.nome}</div> </p>
+              
           </div>
+          
           <div className="lineP">
             <MdEditNote className="iconperfil" />
             <p>Descrição: <div className="descricaop">{usuario.descricao}</div></p>

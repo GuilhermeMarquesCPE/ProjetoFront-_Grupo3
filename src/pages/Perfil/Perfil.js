@@ -5,9 +5,19 @@ import Footer from "../../Components/Footer";
 import { Avatar } from "@material-ui/core";
 import { Link } from "react-router-dom";
 import { MdLocationCity, MdLocationPin, MdWork, MdEditNote, MdCall, MdPerson} from "react-icons/md";
+import api from "../../services/api";
 
 function Perfil(profissionalSS) {
-  console.log(profissionalSS);
+  const servico = profissionalSS.location.state.profissionalSS.profissional_servico_id;
+  const[servicoID, setServicoID] = useState([]);
+
+  useEffect(async() => {
+
+    const resposta = await api.get(`/servicoget/${servico}`);
+    setServicoID(resposta.data[0]);
+     
+  },[]);
+  
 
   return (
     <div className="baseP">
@@ -37,7 +47,7 @@ function Perfil(profissionalSS) {
           </div>
           <div className="lineP">
             <MdWork className="iconperfil" />
-            <p>Tipo de Serviço: <div>{profissionalSS.location.state.profissionalSS.servico}</div> </p>
+            <p>Tipo de Serviço: <div>{servicoID.nome}</div> </p>
           </div>
           <div className="lineP">
             <MdEditNote className="iconperfil" />

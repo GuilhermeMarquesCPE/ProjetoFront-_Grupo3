@@ -12,6 +12,9 @@
     padding:0.5em;
     padding-bottom: 0em;
 }
+.descricaoAD{
+    padding:0.61rem;
+}
 
 .containerAD{
     display: flex;

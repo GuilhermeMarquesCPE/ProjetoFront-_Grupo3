@@ -21,6 +21,7 @@ function ServicoSelecionado() {
   const[servico, setServico] = useState([]);
   const[comentarios, setComentarios] = useState([]);
   const [conte, setConte] = useState();
+  const[conteudo, setConteudo] = useState("");
   console.log(conte)
 
   const history = useHistory();
@@ -59,7 +60,9 @@ function ServicoSelecionado() {
     try {
         const response = await api.post('/comentario', conteAqui);
         // history.push(`/servicoselecionado?servico=${servicoID}`);
-        window.location.href = `/servicoselecionado?servico=${servicoID}`;
+        const resposta = await api.get(`/comentario/${servicoID}`);
+        setComentarios(resposta.data);
+        setConte("");
     } catch (error) {
       if(error.response.status === 403){
         alert("Comentário inválido!");
@@ -100,6 +103,8 @@ function ServicoSelecionado() {
             placeholder="Conte aqui"
             className="textoConteAqui"
             onChange={(e) => setConte(e.target.value)}
+            value= {conte}
+            
           />
           <IconButton aria-label="upload picture" component="span" onClick={handleConteAqui}>
             <BiSend />
@@ -111,8 +116,6 @@ function ServicoSelecionado() {
         {comentarios.map((element) => (
             <>
             <Comentarioprop key={comentarios.id} comentariosSS={element} />
-             
-             
             </>
             
             

@@ -8,6 +8,7 @@ import { BiSend } from "react-icons/bi";
 import Profissionalprop from "../../Components/ProfissionalSS/ProfissionalSS";
 import Comentarioprop from "../../Components/ComentarioSS/ComentarioSS";
 import { useLocation } from "react-router";
+import { useHistory } from "react-router-dom";
 
 function ServicoSelecionado() {
 
@@ -19,6 +20,10 @@ function ServicoSelecionado() {
   const[profissionais, setProfissionais] = useState([]);
   const[servico, setServico] = useState([]);
   const[comentarios, setComentarios] = useState([]);
+  const [conte, setConte] = useState();
+  console.log(conte)
+
+  const history = useHistory();
 
   useEffect(async() => {
 
@@ -42,36 +47,36 @@ function ServicoSelecionado() {
   },[]);
 
 
-  
-  // const comentariosSS = [
-  //   {
-  //     comentario:"Muito bom o servico"
-  //   },
-  //   {
-  //     comentario:"Muito bom o servico"
-  //   },
-  //   {
-  //     comentario:"Muito bom o servico"
-  //   },
  
-  //    {
-  //      comentario:"Muito bom o servico"
-  //    },
-  //    {
-  //      comentario:"Muito bom o servico"
-  //    },
-  //   {
-  //     comentario:"Muito bom o servico"
-  //   }
-  // ]
+  const conteAqui = {
+      corpo: conte,
+      comentario_servico_id: servicoID
+      
+  };
+
+  async function handleConteAqui(e) {
+    e.preventDefault();
+    try {
+        const response = await api.post('/comentario', conteAqui);
+        // history.push(`/servicoselecionado?servico=${servicoID}`);
+        window.location.href = `/servicoselecionado?servico=${servicoID}`;
+    } catch (error) {
+      if(error.response.status === 403){
+        alert("Comentário inválido!");
+      }
+      else {
+        alert(error.response.data.notification);
+      }
+    }
+  }
 
   return (
     <div className="baseSS">
       <Navbar />
       <br/>
-      <h1 className="titleSS">{servico.nome}</h1>
+      <h1 className="titleSS">{servico?.nome}</h1>
       <div className="especificacoes">
-        <p className="description">{servico.especificacoes}</p>
+        <p className="description">{servico?.especificacoes}</p>
       </div>
       <br />
       <br />
@@ -90,12 +95,13 @@ function ServicoSelecionado() {
         <div className="barraConteAqui">
           <p className="perguntaSS">Qual a sua opinião sobre esse serviço?</p>
           <div className="barraIcon">
-          <input
+          <input 
             type="text"
             placeholder="Conte aqui"
             className="textoConteAqui"
+            onChange={(e) => setConte(e.target.value)}
           />
-          <IconButton aria-label="upload picture" component="span">
+          <IconButton aria-label="upload picture" component="span" onClick={handleConteAqui}>
             <BiSend />
           </IconButton>
           </div>
@@ -105,9 +111,10 @@ function ServicoSelecionado() {
         {comentarios.map((element) => (
             <>
             <Comentarioprop key={comentarios.id} comentariosSS={element} />
-             <br/>
+             
              
             </>
+            
             
           ))}
         

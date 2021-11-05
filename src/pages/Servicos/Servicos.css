@@ -37,6 +37,7 @@
     width: 15em;
     margin: .7em;
     border-radius: 4rem !important;
+    
 }
 
 .trabalhos{
@@ -254,5 +255,8 @@
     }
     .barraBusca{
         width:100%;
+    }
+    .emprego.btn.btn-outline-dark {
+        width: 67%;
     }
 }

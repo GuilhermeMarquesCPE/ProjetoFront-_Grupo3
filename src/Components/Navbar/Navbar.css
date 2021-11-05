@@ -1,9 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital@1&display=swap');
+
 .cabecalhoN{
     display: flex;
     background-color: #CBF3F0;
     justify-content: space-between;
     align-items: center;
-    padding-right: 11%;
+    padding-right: 5%;
 }
 .navbar{
     overflow: hidden;
@@ -23,6 +25,7 @@
 .iconNavbar{
     display: flex;
     padding: 1em;
+    width:10%;
 }
 
 .navbarLink:hover, .buttonNavbar:hover{
@@ -37,11 +40,27 @@
 .LogoButton {
     width: 40%;
 }
+.iconeN {
+    padding-top: 0.32em;
+    
+    font-size: 1.2em;
+
+    color: black;
+    font-family: 'Fira Sans';
+}
+
+/* .personN {
+    
+        width: 0.9em;
+        height: 0.9em;
+
+} */
 
 @media (max-width: 780px)  {
     .cabecalhoN {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+        justify-content: center;
         padding-right:5%;
     }
     .navbar {
@@ -65,13 +84,24 @@
         width: 75%;
         justify-content: center;
     }
+    .avatarN {
+        width: 3em;
+        height: 3em;
+    }
+    
 }
-
-@media (max-width: 1050px) and (min-width:780px){
+@media (max-width:400px) {
+    .MuiAvatar-root.MuiAvatar-circular.MuiAvatar-colorDefault.avatarN.css-1ac1rp-MuiAvatar-root {
+        width:25px;
+        height:25px;
+    }
+}
+@media (max-width: 1065px) and (min-width:780px){
     .cabecalhoN {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         padding-right:5%;
+        justify-content: center;
     }
     .navbar {
         display: none;
@@ -79,7 +109,7 @@
         width: 0;
     }
     .logoN{
-        max-width: 60%;
+        max-width: 75%;
         margin-left: 3%;
     }
     .buttonNavbar{
@@ -94,14 +124,18 @@
         width: 75%;
         justify-content: center;
     }
+    .MuiAvatar-root.MuiAvatar-circular.MuiAvatar-colorDefault.avatarN.css-1ac1rp-MuiAvatar-root {
+        width:50px;
+        height:50px;
+    }
 }
 
-@media (max-width: 1351px) and (min-width:1050px) {
+@media (max-width: 1351px) and (min-width:1065px) {
     .navbarLink{
         font-size: 1.4em;
     }
     .navbar{
-        width: 70%; 
+        width: 61%; 
     }
     .LogoButton{
         width:61%;

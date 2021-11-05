@@ -13,14 +13,13 @@ function Home(){
     return (
     <div className="home" >
         <Navbar/>
-        <br/>
-        <br/>
-        <br/>
+        
+        
         <div className="areaCarrossel">
             <Carousel className="carrossel">
                 <Carousel.Item className="carrosselItem">
                     <img
-                    className="d-block w-100"
+                    className="d-block-w-100"
                     src="/Images/helmet.jpg"
                     alt="First slide"
                     />
@@ -31,7 +30,7 @@ function Home(){
                 </Carousel.Item>
                 <Carousel.Item className="carrosselItem">
                     <img
-                    className="d-block w-100"
+                    className="d-block-w-100"
                     src="/Images/PINTAR.jpg"
                     alt="Second slide"
                     />
@@ -43,7 +42,7 @@ function Home(){
                 </Carousel.Item>
                 <Carousel.Item className="carrosselItem">
                     <img
-                    className="d-block w-100"
+                    className="d-block-w-100"
                     src="/Images/professor particular.png"
                     alt="Third slide"
                     />
@@ -55,9 +54,7 @@ function Home(){
                 </Carousel.Item>
     </Carousel>
         </div>
-    <br/>
-    <br/>
-    <br/>
+        
     <div className="bora">
             <p className="tituloH">#BoraFazerDiferente</p>
         <div className="textoLogoH">

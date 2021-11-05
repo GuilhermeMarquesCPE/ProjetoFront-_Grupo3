@@ -59,7 +59,7 @@ function PerfilPessoal() {
         <h2 className="fraseP">Bem Vindo! </h2>
         <Avatar sx={{ width: 150, height: 150, bgcolor: "#fabe36" }}>
           {usuario.nome && (
-            <h1 className="iconeP">{usuario.nome[0]}</h1>
+            <h1 className="iconeP">{usuario.nome[0].toUpperCase()}</h1>
           )}
         </Avatar>
         <div className="informacoesP">
@@ -69,7 +69,9 @@ function PerfilPessoal() {
         <div className="alterarPP">
         <div className="change">
         <Link to="alterardados" className="ChangeData" > Alterar dados </Link>
+        <div to="alterardados" className="ChangeData" > Alterar senha </div>
         </div>
+        <br/>
         <div className="change">
         <Link className="ChangeData" onClick={handleLogout}> Sair </Link>
         </div>
